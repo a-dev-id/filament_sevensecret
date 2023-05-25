@@ -1,15 +1,15 @@
 @section('meta')
-<meta name="title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta name="title" content="{{ $setting->meta_title }} | Seven Secret by Hanging Gardens">
 <meta name="description" content="{{ $setting->meta_description }}">
 <meta name="keywords" content="{{ implode(',', $setting->meta_keyword) }}">
 <title>{{ $setting->meta_title }}</title>
 <meta property="og:url" content="{{ route('index') }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta property="og:title" content="{{ $setting->meta_title }} | Seven Secret by Hanging Gardens">
 <meta property="og:description" content="{{ $setting->meta_description }}">
 <meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
 
-<meta name="twitter:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta name="twitter:title" content="{{ $setting->meta_title }} | Seven Secret by Hanging Gardens">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
 <meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
 
@@ -116,7 +116,7 @@
 </script>
 @endpush
 
-<x-elevate-bali>
+<x-seven-secret>
 
     <section class="slider-section">
 
@@ -133,9 +133,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img class="mb-2" src="{{asset('images/logo.png')}}" alt="Elevate Bali" style="width: 300px">
-                    <div class=" mb-5 underline"></div>
-                    <h1 class="mb-3 fs-5 fst-italic">{{$setting->title}}</h1>
+                    <img class="mb-5" src="{{asset('images/logo-sevensecret.png')}}" alt="Elevate Bali" style="width: 300px">
+                    {{-- <div class=" mb-5 underline"></div> --}}
+                    <h1 class="mb-3 mt-3 fs-4 fst-italic">{{$setting->title}}</h1>
+                    <div class="underline"></div>
+                    <h2 class="mb-3 mt-3 fs-5 fst-italic">{{$setting->subtitle}}</h2>
                     {!! $setting->description !!}
                 </div>
             </div>
@@ -279,4 +281,4 @@
         <iframe src="https://snapwidget.com/embed/977398" class="snapwidget-widget border-0 overflow-hidden w-100" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
     </div>
 
-</x-elevate-bali>
+</x-seven-secret>

@@ -26,7 +26,7 @@ class HomeController extends Controller
         $offer_list = Offer::where('is_active', '1')->latest()->get();
         $review_list = Review::where('is_active', '1')->get();
         $popup_list = PopUp::where('is_active', '1')->get();
-        return view('elevate.home')->with(compact('setting', 'villa_list', 'experience_list', 'offer_list', 'review_list', 'popup_list'));
+        return view('seven_secret.home')->with(compact('setting', 'villa_list', 'experience_list', 'offer_list', 'review_list', 'popup_list'));
     }
 
     /**
