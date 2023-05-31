@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/elevate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/seven_secrets.css') }}">
 
     @stack('css')
     @vite('resources/js/app.js')
@@ -51,10 +51,11 @@
                         <img src="{{asset('images/logo-sevensecret.png')}}" class="navlogo fade-in">
                     </a>
                     <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a href="{{route('dining.index')}}" class="nav-link text-white px-2 px-xl-3">Facilities</a></li>
                         <li class="nav-item"><a href="{{route('honeymoon.index')}}" class="nav-link text-white px-2 px-xl-3">Honeymoon</a></li>
                         <li class="nav-item"><a href="{{route('weddings.index')}}" class="nav-link text-white px-2 px-xl-3">Weddings</a></li>
                         <li class="nav-item"><a href="{{route('gallery.index')}}" class="nav-link text-white px-2 px-xl-3">Gallery</a></li>
-                        <li class="nav-item"><a href="{{route('contact-us.index')}}" class="nav-link text-white px-2 px-xl-3">Contact Us</a></li>
+                        {{-- <li class="nav-item"><a href="{{route('contact-us.index')}}" class="nav-link text-white px-2 px-xl-3">Contact Us</a></li> --}}
                     </ul>
                 </div>
             </nav>

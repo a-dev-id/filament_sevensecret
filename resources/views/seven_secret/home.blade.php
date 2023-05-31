@@ -34,6 +34,15 @@
         transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.7s;
     }
 
+    .header-iframe-youtube {
+        width: 102%;
+        height: 120%;
+        top: -10%;
+        left: -1%;
+        position: absolute;
+        pointer-events: none;
+    }
+
 </style>
 @endpush
 
@@ -118,16 +127,9 @@
 
 <x-seven-secret>
 
-    <section class="slider-section">
-
-        @foreach ($setting->images as $data)
-        <div class="vh-100 overflow-hidden position-relative">
-            <img src="{{asset('storage/'.$data->image)}}" alt="{{$data->title}}" class="h-100 w-100 object-fit-cover object-position-center">
-        </div>
-        @endforeach
-
+    <section class="vh-100 overflow-hidden position-relative">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLw8fGZ6fiQLAq1WBfM99LCXAPSWcUZXIz&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=9RA48trBz24" class="header-iframe-youtube"></iframe>
     </section>
-
 
     <section class="py-90 bg-light-gray">
         <div class="container">

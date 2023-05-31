@@ -18,7 +18,7 @@ class VillaController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '2')->first();
         $villa_list = Villa::where('is_active', '1')->get();
-        return view('elevate.villa')->with(compact('setting', 'villa_list'));
+        return view('seven_secret.villa')->with(compact('setting', 'villa_list'));
     }
 
     /**
@@ -52,7 +52,7 @@ class VillaController extends Controller
     {
         $setting = Villa::where('is_active', '1')->where('slug', $slug)->first();
         $villa_list = Villa::where('is_active', '1')->get();
-        return view('elevate.villa-detail')->with(compact('setting', 'villa_list'));
+        return view('seven_secret.villa-detail')->with(compact('setting', 'villa_list'));
     }
 
     /**

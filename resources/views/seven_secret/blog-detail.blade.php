@@ -22,7 +22,7 @@
 @push('js')
 @endpush
 
-<x-elevate-bali>
+<x-seven-secret>
     <section class="header-image">
         <img src="{{ asset('storage/' . $setting->banner_image) }}" alt="{{ $setting->title }}" class="w-100 vh-100">
     </section>
@@ -69,4 +69,4 @@
         </div>
     </section>
 
-</x-elevate-bali>
+</x-seven-secret>

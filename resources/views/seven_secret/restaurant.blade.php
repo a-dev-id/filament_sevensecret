@@ -35,7 +35,7 @@
 </script>
 @endpush
 
-<x-elevate-bali>
+<x-seven-secret>
     <section class="slider-section">
         <div class="vh-100 overflow-hidden position-relative">
             <img src="{{asset('storage/'.$setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
@@ -70,7 +70,7 @@
                     </div> --}}
                 </div>
                 <div class="col-12 col-md-8 ps-5">
-                    <h5 class="fw-bold mb-3">{{$setting->excerpt}}</h5>
+                    {{-- <h5 class="fw-bold mb-3">{{$setting->excerpt}}</h5> --}}
                     <div class="lh-lg">{!! $setting->description !!}</div>
                 </div>
             </div>
@@ -445,4 +445,4 @@
 
     </section>
 
-</x-elevate-bali>
+</x-seven-secret>
