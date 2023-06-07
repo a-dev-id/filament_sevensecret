@@ -18,7 +18,7 @@ class AwardController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '9')->first();
         $award_list = Award::where('is_active', '1')->latest()->paginate(5);;
-        return view('elevate.award')->with(compact('setting', 'award_list'));
+        return view('seven_secret.award')->with(compact('setting', 'award_list'));
     }
 
     /**

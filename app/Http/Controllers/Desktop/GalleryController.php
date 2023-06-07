@@ -20,7 +20,7 @@ class GalleryController extends Controller
         $setting = Page::where('is_active', '1')->where('id', '7')->first();
         $gallery_list = Gallery::where('is_active', '1')->get();
         $categories = Category::where('is_active', '1')->get();
-        return view('elevate.gallery')->with(compact('setting', 'gallery_list', 'categories'));
+        return view('seven_secret.gallery')->with(compact('setting', 'gallery_list', 'categories'));
     }
 
     /**

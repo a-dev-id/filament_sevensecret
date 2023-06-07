@@ -128,7 +128,7 @@
 <x-seven-secret>
 
     <section class="vh-100 overflow-hidden position-relative">
-        <iframe src="https://www.youtube.com/embed/videoseries?list=PLw8fGZ6fiQLAq1WBfM99LCXAPSWcUZXIz&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=9RA48trBz24" class="header-iframe-youtube"></iframe>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLw8fGZ6fiQLDJFgAGgnwqjoTEvBH1pd8r&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=9RA48trBz24" class="header-iframe-youtube"></iframe>
     </section>
 
     <section class="py-90 bg-light-gray">

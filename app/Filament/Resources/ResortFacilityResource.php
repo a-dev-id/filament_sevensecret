@@ -17,7 +17,9 @@ class ResortFacilityResource extends Resource
 {
     protected static ?string $model = ResortFacility::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?int $navigationSort = 2;
+    protected static ?string $navigationIcon = 'heroicon-s-library';
+    protected static ?string $navigationGroup = 'General';
 
     public static function form(Form $form): Form
     {
@@ -43,14 +45,14 @@ class ResortFacilityResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -58,5 +60,5 @@ class ResortFacilityResource extends Resource
             'create' => Pages\CreateResortFacility::route('/create'),
             'edit' => Pages\EditResortFacility::route('/{record}/edit'),
         ];
-    }    
+    }
 }

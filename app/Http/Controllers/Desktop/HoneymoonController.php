@@ -18,7 +18,7 @@ class HoneymoonController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '5')->first();
         $honeymoon_list = Honeymoon::where('is_active', '1')->get();
-        return view('elevate.honeymoon')->with(compact('setting', 'honeymoon_list'));
+        return view('seven_secret.honeymoon')->with(compact('setting', 'honeymoon_list'));
     }
 
     /**

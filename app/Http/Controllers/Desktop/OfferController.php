@@ -18,7 +18,7 @@ class OfferController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '15')->first();
         $offer_list = Offer::where('is_active', '1')->latest()->get();
-        return view('elevate.offer')->with(compact('setting', 'offer_list'));
+        return view('seven_secret.offer')->with(compact('setting', 'offer_list'));
     }
 
     /**

@@ -3,11 +3,9 @@
 namespace App\Http\Controllers\Desktop;
 
 use App\Http\Controllers\Controller;
-use App\Models\Blog;
-use App\Models\Page;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class ResortFacilityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '10')->first();
-        $blog_list = Blog::where('is_active', '1')->latest()->paginate(5);
-        return view('seven_secret.blog')->with(compact('setting', 'blog_list'));
+        //
     }
 
     /**
@@ -48,12 +44,9 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show($id)
     {
-        $setting = Page::where('is_active', '1')->where('id', '10')->first();
-        $blog_detail = Blog::where('is_active', '1')->where('slug', $slug)->first();
-        $blog_list = Blog::where('is_active', '1')->latest()->limit(5)->get();
-        return view('seven_secret.blog-detail')->with(compact('setting', 'blog_detail', 'blog_list'));
+        //
     }
 
     /**

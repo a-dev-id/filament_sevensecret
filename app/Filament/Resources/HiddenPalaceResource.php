@@ -34,6 +34,7 @@ class HiddenPalaceResource extends Resource
     protected static ?int $navigationSort = 2;
     protected static ?string $navigationIcon = 'heroicon-s-library';
     protected static ?string $navigationGroup = 'General';
+    protected static bool $shouldRegisterNavigation = false;
 
     public static function form(Form $form): Form
     {

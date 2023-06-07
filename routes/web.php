@@ -22,8 +22,9 @@ Route::resource('/accommodations', App\Http\Controllers\Desktop\VillaController:
 
 // Route::resource('/hidden-palace', App\Http\Controllers\Desktop\HiddenPalaceController::class);
 Route::resource('/activities', App\Http\Controllers\Desktop\ExperienceController::class);
+Route::resource('/facilities', App\Http\Controllers\Desktop\ResortFacilityController::class);
 Route::resource('/dining', App\Http\Controllers\Desktop\DiningController::class);
-// Route::resource('/spa', App\Http\Controllers\Desktop\SpaController::class);
+Route::resource('/spa', App\Http\Controllers\Desktop\SpaController::class);
 Route::resource('/weddings', App\Http\Controllers\Desktop\WeddingController::class);
 Route::resource('/gallery', App\Http\Controllers\Desktop\GalleryController::class);
 Route::resource('/contact-us', App\Http\Controllers\Desktop\ContactController::class);
@@ -76,6 +77,7 @@ Route::get('/m/accommodations', [App\Http\Controllers\Mobile\VillaController::cl
 Route::get('/m/weddings', [App\Http\Controllers\Mobile\WeddingController::class, 'index'])->name('mwedding');
 Route::get('/m/honeymoon', [App\Http\Controllers\Mobile\HoneymoonController::class, 'index'])->name('mhoneymoon');
 Route::get('/m/contact', [App\Http\Controllers\Mobile\ContactUsController::class, 'index'])->name('mcontact');
+Route::get('/m/facilities', [App\Http\Controllers\Mobile\ResortFacilityController::class, 'index'])->name('mfacility');
 
 
 Route::get('/link', function () {

@@ -18,7 +18,7 @@ class PressController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '12')->first();
         $press_list = PressRoom::where('is_active', '1')->get();
-        return view('elevate.press')->with(compact('setting', 'press_list'));
+        return view('seven_secret.press')->with(compact('setting', 'press_list'));
     }
 
     /**

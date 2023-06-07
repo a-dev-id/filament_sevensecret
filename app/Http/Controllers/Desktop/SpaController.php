@@ -18,7 +18,7 @@ class SpaController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '5')->first();
         $spa_list = Spa::where('is_active', '1')->get();
-        return view('elevate.spa')->with(compact('setting', 'spa_list'));
+        return view('seven_secret.spa')->with(compact('setting', 'spa_list'));
     }
 
     /**

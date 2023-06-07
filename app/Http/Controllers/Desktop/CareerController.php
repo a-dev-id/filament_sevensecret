@@ -18,7 +18,7 @@ class CareerController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '14')->first();
         $career_list = Career::where('is_active', '1')->get();
-        return view('elevate.career')->with(compact('setting', 'career_list'));
+        return view('seven_secret.career')->with(compact('setting', 'career_list'));
     }
 
     /**

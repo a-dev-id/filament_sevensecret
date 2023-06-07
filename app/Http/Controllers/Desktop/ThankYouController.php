@@ -16,7 +16,7 @@ class ThankYouController extends Controller
     public function index()
     {
         $setting = Page::where('is_active', '1')->where('id', '16')->first();
-        return view('elevate.thank-you')->with(compact('setting'));
+        return view('seven_secret.thank-you')->with(compact('setting'));
     }
 
     /**

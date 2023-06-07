@@ -46,15 +46,17 @@
                         <li class="nav-item"><a href="{{route('accommodations.index')}}" class="nav-link text-white px-2 px-xl-3">Accommodations</a></li>
                         <li class="nav-item"><a href="{{route('activities.index')}}" class="nav-link text-white px-2 px-xl-3">Activities</a></li>
                         <li class="nav-item"><a href="{{route('dining.index')}}" class="nav-link text-white px-2 px-xl-3">Dining</a></li>
+
                     </ul>
                     <a href="{{route('index')}}" class="navbar-brand mx-2">
                         <img src="{{asset('images/logo-sevensecret.png')}}" class="navlogo fade-in">
                     </a>
                     <ul class="navbar-nav align-items-center">
-                        <li class="nav-item"><a href="{{route('dining.index')}}" class="nav-link text-white px-2 px-xl-3">Facilities</a></li>
+                        <li class="nav-item"><a href="{{route('spa.index')}}" class="nav-link text-white px-2 px-xl-3">Spa</a></li>
+                        <li class="nav-item"><a href="{{route('facilities.index')}}" class="nav-link text-white px-2 px-xl-3">Facilities</a></li>
                         <li class="nav-item"><a href="{{route('honeymoon.index')}}" class="nav-link text-white px-2 px-xl-3">Honeymoon</a></li>
                         <li class="nav-item"><a href="{{route('weddings.index')}}" class="nav-link text-white px-2 px-xl-3">Weddings</a></li>
-                        <li class="nav-item"><a href="{{route('gallery.index')}}" class="nav-link text-white px-2 px-xl-3">Gallery</a></li>
+                        {{-- <li class="nav-item"><a href="{{route('gallery.index')}}" class="nav-link text-white px-2 px-xl-3">Gallery</a></li> --}}
                         {{-- <li class="nav-item"><a href="{{route('contact-us.index')}}" class="nav-link text-white px-2 px-xl-3">Contact Us</a></li> --}}
                     </ul>
                 </div>
@@ -142,7 +144,9 @@
                         <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Story</a>
                         <a href="{{route('awards.index')}}" class="nav-link p-0 link-dark text-decoration-none">Awards</a>
                         <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Press Room</a>
+                        <a href="{{route('gallery.index')}}" class="nav-link p-0 link-dark text-decoration-none">Gallery</a>
                         <a href="{{route('contact-us.index')}}" class="nav-link p-0 link-dark text-decoration-none">Contact Us</a>
+
                     </nav>
                 </div>
                 <div class="col-12 col-md-3">
