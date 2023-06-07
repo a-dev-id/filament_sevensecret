@@ -489,7 +489,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="text-center my-2">Copyright &copy; 2023 Elevate Bali.</p>
+                    <p class="text-center my-2">Copyright &copy; 2023 Seven Secrets by Hanging Gardens.</p>
                 </div>
             </div>
         </div>

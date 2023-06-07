@@ -91,7 +91,12 @@
                                 </div>
                                 <div class="pe-3">
                                     {{-- <button type="submit" class="btn btn-sm btn-primary text-uppercase py-2 px-3 rounded-0">Inquire Now</button> --}}
-                                    <button type="button" class="btn btn-sm btn-primary text-uppercase py-2 px-3 rounded-0" data-bs-toggle="modal" data-bs-target="#{{'modalinquiry'.$data->id}}">
+                                    <button type="button" @if($loop->iteration % 2 == 0)
+                                        class="btn btn-sm btn-primary text-uppercase py-2 px-3 rounded-0 float-end" data-bs-toggle="modal"
+                                        @else
+                                        class="btn btn-sm btn-primary text-uppercase py-2 px-3 rounded-0" data-bs-toggle="modal"
+                                        @endif
+                                        data-bs-toggle="modal" data-bs-target="#{{'modalinquiry'.$data->id}}">
                                         {{ $data->button_text }}
                                     </button>
 

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Desktop;
 
 use App\Http\Controllers\Controller;
+use App\Models\Page;
+use App\Models\ResortFacility;
 use Illuminate\Http\Request;
 
 class ResortFacilityController extends Controller
@@ -14,7 +16,9 @@ class ResortFacilityController extends Controller
      */
     public function index()
     {
-        //
+        $setting = Page::where('is_active', '1')->where('id', '6')->first();
+        $facilities_list = ResortFacility::where('is_active', '1')->get();
+        return view('seven_secret.facility')->with(compact('setting', 'facilities_list'));
     }
 
     /**
