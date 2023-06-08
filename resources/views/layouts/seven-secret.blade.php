@@ -154,7 +154,7 @@
                         <h3 class="d-flex justify-content-between">Others <i class="fa fa-snowflake-o"></i></h3>
                     </div>
                     <nav class="nav flex-column fs-6">
-                        <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Policy & Legal</a>
+                        <a href="{{route('policy-legal.index')}}" class="nav-link p-0 link-dark text-decoration-none">Policy & Legal</a>
                         <a href="{{route('blog.index')}}" class="nav-link p-0 link-dark text-decoration-none">Blog</a>
                         <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Careers</a>
                         {{-- <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">GDS Code</a> --}}

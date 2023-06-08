@@ -15,7 +15,7 @@ class PolicyLegalController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '13')->first();
+        $setting = Page::where('is_active', '1')->where('id', '9')->first();
         return view('seven_secret.policy-legal')->with(compact('setting'));
     }
 
