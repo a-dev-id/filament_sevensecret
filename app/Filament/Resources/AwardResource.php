@@ -35,7 +35,7 @@ class AwardResource extends Resource
             ->schema([
                 TextInput::make('title'),
                 Forms\Components\TextInput::make('subtitle'),
-                FileUpload::make('cover_image')->label('Image'),
+                FileUpload::make('cover_image')->label('Image')->directory('awards'),
                 Forms\Components\Textarea::make('excerpt')
                     ->maxLength(65535),
                 RichEditor::make('description'),

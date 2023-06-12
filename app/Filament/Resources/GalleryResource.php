@@ -42,8 +42,8 @@ class GalleryResource extends Resource
 
                             ]),
                             Grid::make(2)->schema([
-                                FileUpload::make('thumb'),
-                                FileUpload::make('image')
+                                FileUpload::make('thumb')->directory('gallery/thumb'),
+                                FileUpload::make('image')->directory('gallery/original')
                             ]),
                             Grid::make(1)->schema([
                                 Toggle::make('is_active')

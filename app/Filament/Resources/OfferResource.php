@@ -77,8 +77,8 @@ class OfferResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image'),
-                                FileUpload::make('cover_image')->label('Cover Image'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('offers/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('offers/cover'),
                             ]),
                         ])
                         ->collapsible()
@@ -129,10 +129,10 @@ class OfferResource extends Resource
                 //         'secondary' => 0,
                 //         'success' => 1,
                 //     ]),
-            TextColumn::make('is_active')->label('Publised')->enum([
-                '0' => 'Draft',
-                '1' => 'Yes',
-            ]),
+                TextColumn::make('is_active')->label('Publised')->enum([
+                    '0' => 'Draft',
+                    '1' => 'Yes',
+                ]),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime('d M Y'),
                 Tables\Columns\TextColumn::make('updated_at')

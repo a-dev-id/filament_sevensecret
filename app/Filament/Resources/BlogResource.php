@@ -101,8 +101,8 @@ class BlogResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image'),
-                                FileUpload::make('cover_image')->label('Cover Image'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('blog/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('blog/cover'),
                             ]),
                         ])
                         ->collapsible()

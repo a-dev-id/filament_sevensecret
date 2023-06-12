@@ -67,41 +67,42 @@
             <div class="booking-inner">
                 <div class="booking-form-wrapper">
                     <div class="booking-form-wrapper-inner">
-                        <form class="d-flex h-100" action="https://book-directonline.com/properties/elevatebalibyhanginggardendirect?checkInDate={{date('Y-m-d')}}&checkOutDate={{date('Y-m-d',strtotime('+1 day'))}}&trackPage=yes" method="get" target="_blank">
-                            <input type="hidden" name="id" value="2583">
-                            <div class="col px-1 position-relative h-100">
-                                <label class="booking-field-text">Arrival</label>
-                                <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="fromDate" value="{{date('d-m-Y')}}" readonly="true">
-                                <i class="fa fa-calendar booking-field-icon"></i>
-                                <input type="hidden" name="checkInDate" class="datepicker-input" value="{{date('d-m-Y')}}">
-                            </div>
-                            <div class="col px-1 position-relative h-100">
-                                <label class="booking-field-text">Departure</label>
-                                <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="toDate" value="{{date('d-m-Y',strtotime('+1 day'))}}" readonly="true">
-                                <i class="fa fa-calendar booking-field-icon"></i>
-                                <input type="hidden" name="checkOutDate" class="datepicker-input" value="{{date('d-m-Y',strtotime('+1 day'))}}">
-                            </div>
-                            <div class="col px-1 position-relative h-100">
-                                <label class="booking-field-text">Guests</label>
-                                <select class="form-control booking-field-input h-100 w-100">
-                                    <option value="1">01</option>
-                                    <option value="2">02</option>
-                                    <option value="3">03</option>
-                                    <option value="4">04</option>
-                                    <option value="5">05</option>
-                                    <option value="more...">more...</option>
-                                </select>
-                                <i class="fa fa-chevron-down booking-field-icon"></i>
-                            </div>
-                            <div class="col px-1 position-relative h-100">
-                                <label class="booking-field-text">Promo code</label>
-                                <input type="text" class="form-control booking-field-input h-100 w-100" name="promo" placeholder="...">
-                                <i class="fa fa-tag booking-field-icon"></i>
-                            </div>
-                            <div class="col px-1 position-relative h-100">
-                                <button type="submit" class="btn btn-primary text-uppercase rounded-0 fw-bold h-100 w-100">BOOK</button>
-                            </div>
-                        </form>
+                        {{-- <form class="d-flex h-100" action="https://book-directonline.com/properties/elevatebalibyhanginggardendirect?checkInDate={{date('Y-m-d')}}&checkOutDate={{date('Y-m-d',strtotime('+1 day'))}}&trackPage=yes" method="get" target="_blank"> --}}
+                            <form class="d-flex h-100" action="https://www.e1-booking.com/booking/booking-page.php?checkin={{date('d-m-Y')}}&checkout={{date('d-m-Y',strtotime('+1 day'))}}&id=3169&promo=" method="get" target="_blank">
+                                <input type="hidden" name="id" value="2583">
+                                <div class="col px-1 position-relative h-100">
+                                    <label class="booking-field-text">Arrival</label>
+                                    <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="fromDate" value="{{date('d-m-Y')}}" readonly="true">
+                                    <i class="fa fa-calendar booking-field-icon"></i>
+                                    <input type="hidden" name="checkInDate" class="datepicker-input" value="{{date('d-m-Y')}}">
+                                </div>
+                                <div class="col px-1 position-relative h-100">
+                                    <label class="booking-field-text">Departure</label>
+                                    <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="toDate" value="{{date('d-m-Y',strtotime('+1 day'))}}" readonly="true">
+                                    <i class="fa fa-calendar booking-field-icon"></i>
+                                    <input type="hidden" name="checkOutDate" class="datepicker-input" value="{{date('d-m-Y',strtotime('+1 day'))}}">
+                                </div>
+                                <div class="col px-1 position-relative h-100">
+                                    <label class="booking-field-text">Guests</label>
+                                    <select class="form-control booking-field-input h-100 w-100">
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                        <option value="more...">more...</option>
+                                    </select>
+                                    <i class="fa fa-chevron-down booking-field-icon"></i>
+                                </div>
+                                <div class="col px-1 position-relative h-100">
+                                    <label class="booking-field-text">Promo code</label>
+                                    <input type="text" class="form-control booking-field-input h-100 w-100" name="promo" placeholder="...">
+                                    <i class="fa fa-tag booking-field-icon"></i>
+                                </div>
+                                <div class="col px-1 position-relative h-100">
+                                    <button type="submit" class="btn btn-primary text-uppercase rounded-0 fw-bold h-100 w-100">BOOK</button>
+                                </div>
+                            </form>
                     </div>
                 </div>
             </div>

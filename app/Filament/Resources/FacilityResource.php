@@ -32,7 +32,7 @@ class FacilityResource extends Resource
         return $form
             ->schema([
                 TextInput::make('title'),
-                FileUpload::make('icon'),
+                FileUpload::make('icon')->directory('facility'),
                 Toggle::make('is_active')
                     ->label('Publish')
                     ->inline(false)
