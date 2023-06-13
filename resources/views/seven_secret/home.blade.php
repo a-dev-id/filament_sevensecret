@@ -174,7 +174,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="fs-2 text-center mb-5 underline fw-bold">Accommodations</h1>
+                    <h1 class="fs-2 text-center mb-5 underline fw-bold text-uppercase">Accommodations</h1>
                     <div class="position-relative" id="accommodation-slides">
                         <div class="sliders with-half-slides overflow-hidden">
 
@@ -187,7 +187,7 @@
                                     <div class="text-white d-flex justify-content-between align-items-center w-100 pe-4">
                                         <div class="leftline position-relative ps-5">
                                             <div class="px-3">
-                                                <h2 class="fs-4 fw-bold mb-3">{{$data->title}}</h2>
+                                                <h2 class="fs-4 fw-bold mb-3 text-uppercase">{{$data->title}}</h2>
                                                 <p class="small mb-0">{{$data->excerpt}}</p>
                                             </div>
                                         </div>
@@ -214,10 +214,10 @@
                     @foreach ($experience_list as $data)
                     <div class="row d-flex">
                         <div class="col-12 col-md-6 text-center d-flex flex-column justify-content-between">
-                            <h1 class="underline pt-4 fw-bold">Activities</h1>
+                            <h1 class="underline pt-4 fw-bold text-uppercase">Activities</h1>
                             <div class="px-4">
-                                <h3 class="text-uppercase fst-italic mb-4">{{$data->title}}</h3>
-                                <div class="fs-5">{!! $data->excerpt !!}</div>
+                                <h2 class="text-uppercase fst-italic mb-4 text-uppercase">{{$data->title}}</h2>
+                                {!! $data->excerpt !!}
                             </div>
                             <div class="pb-4">
                                 <a href="{{route('activities.index')}}" class="btn btn-primary text-uppercase px-4 py-3 rounded-0 fw-bold">Discover More</a>
@@ -240,7 +240,7 @@
         <div class="container">
             <div class="row gx-0">
                 <div class="col-12 text-center position-relative" id="offers-slides">
-                    <h1 class="fs-2 text-center mb-5 underline fw-bold">Special Offers</h1>
+                    <h1 class="fs-2 text-center mb-5 underline fw-bold text-uppercase">Special Offers</h1>
                     <div class="sliders overflow-hidden position-relative" style="z-index: 2;">
 
                         @foreach ($offer_list as $data)

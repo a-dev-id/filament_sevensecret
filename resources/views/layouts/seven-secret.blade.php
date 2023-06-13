@@ -186,7 +186,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3">
-                        <h2 class="text-light">Stay in touch</h2>
+                        <h2 class="text-light text-uppercase">Stay in touch</h2>
                     </div>
                     <div class="col-12 col-md-7">
                         <form id="subscribeForm" method="post" action="{{route('index')}}/subscribe/subscribe_email.php">
