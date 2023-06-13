@@ -120,19 +120,15 @@ class OfferResource extends Resource
             ->columns([
                 ImageColumn::make('cover_image')->square()->label('Image'),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
-                // IconColumn::make('is_active')->label('Published')
-                //     ->options([
-                //         'heroicon-o-x-circle' => 0,
-                //         'heroicon-o-check-circle' => 1,
-                //     ])
-                //     ->colors([
-                //         'secondary' => 0,
-                //         'success' => 1,
-                //     ]),
-                TextColumn::make('is_active')->label('Publised')->enum([
-                    '0' => 'Draft',
-                    '1' => 'Yes',
-                ]),
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
+                    ])
+                    ->colors([
+                        'danger' => 0,
+                        'success' => 1,
+                    ]),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime('d M Y'),
                 Tables\Columns\TextColumn::make('updated_at')

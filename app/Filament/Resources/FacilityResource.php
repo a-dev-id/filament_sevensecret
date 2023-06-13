@@ -47,6 +47,15 @@ class FacilityResource extends Resource
             ->columns([
                 ImageColumn::make('icon')->square(),
                 TextColumn::make('title')->sortable()->searchable(),
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
+                    ])
+                    ->colors([
+                        'danger' => 0,
+                        'success' => 1,
+                    ]),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime('d M Y'),
                 Tables\Columns\TextColumn::make('updated_at')

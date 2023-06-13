@@ -131,13 +131,13 @@ class PageResource extends Resource
                 Tables\Columns\TextColumn::make('page_name')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('is_active')->label('Published'),
-                IconColumn::make('is_active')->label('Published')
-                    ->options([
-                        'heroicon-o-x-circle' => 0,
-                        'heroicon-o-check-circle' => 1,
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
                     ])
                     ->colors([
-                        'secondary' => 0,
+                        'danger' => 0,
                         'success' => 1,
                     ]),
                 Tables\Columns\TextColumn::make('created_at')

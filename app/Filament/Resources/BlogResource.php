@@ -20,6 +20,7 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
@@ -138,13 +139,13 @@ class BlogResource extends Resource
                 ImageColumn::make('cover_image')->square()->label('Image'),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('is_active')->label('Published'),
-                IconColumn::make('is_active')->label('Published')
-                    ->options([
-                        'heroicon-o-x-circle' => 0,
-                        'heroicon-o-check-circle' => 1,
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
                     ])
                     ->colors([
-                        'secondary' => 0,
+                        'danger' => 0,
                         'success' => 1,
                     ]),
                 Tables\Columns\TextColumn::make('created_at')

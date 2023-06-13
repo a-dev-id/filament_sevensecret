@@ -61,13 +61,13 @@ class ReviewResource extends Resource
                 ImageColumn::make('avatar'),
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('title')->searchable()->sortable(),
-                IconColumn::make('is_active')->label('Published')
-                    ->options([
-                        'heroicon-o-x-circle' => 0,
-                        'heroicon-o-check-circle' => 1,
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
                     ])
                     ->colors([
-                        'secondary' => 0,
+                        'danger' => 0,
                         'success' => 1,
                     ]),
                 Tables\Columns\TextColumn::make('created_at')

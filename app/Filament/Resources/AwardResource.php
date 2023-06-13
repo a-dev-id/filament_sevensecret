@@ -20,6 +20,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\TextInputColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\BadgeColumn;
 
 class AwardResource extends Resource
 {
@@ -52,13 +53,13 @@ class AwardResource extends Resource
             ->columns([
                 ImageColumn::make('cover_image')->label('Image'),
                 TextColumn::make('title')->searchable(),
-                IconColumn::make('is_active')->label('Published')
-                    ->options([
-                        'heroicon-o-x-circle' => 0,
-                        'heroicon-o-check-circle' => 1,
+                BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
                     ])
                     ->colors([
-                        'secondary' => 0,
+                        'danger' => 0,
                         'success' => 1,
                     ]),
                 Tables\Columns\TextColumn::make('created_at')
