@@ -36,7 +36,7 @@
         <div class="container-fluid check">
             <div class="row">
                 <div class="col-12">
-                    <a href="https://book-directonline.com/properties/elevatebalibyhanginggardendirect?trackPage=yes" class="check-item link-light" target="_blank">
+                    <a href="https://www.e1-booking.com/booking/seven-secrets-by-hanging-gardens_3169.html" class="check-item link-light" target="_blank">
                         <span>
                             <i class="fa fa-calendar me-2"></i>
                             Check Availability
