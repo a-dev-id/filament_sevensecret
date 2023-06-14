@@ -13,7 +13,7 @@
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
 <meta name="twitter:image" content="{{ asset('storage/' . $setting->cover_image) }}">
 
-<link rel="canonical" href="{{ route('mexperience') }}" />
+<link rel="canonical" href="{{ route('mfacility') }}" />
 @endsection
 
 @push('css')
@@ -42,7 +42,7 @@
         </div>
         <div class="container-fluid activities py-2 mb-5">
             <div class="row">
-                @foreach ($experience_list as $data)
+                @foreach ($facility_list as $data)
                 <div class="col-12">
                     <div class="row gx-1 py-3 @if ($loop->last) @else border-bottom @endif">
                         <div class="col-5">

@@ -43,6 +43,15 @@ class FacilitiesRelationManager extends RelationManager
             ->columns([
                 ImageColumn::make('icon')->square(),
                 Tables\Columns\TextColumn::make('title'),
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
+                    ])
+                    ->colors([
+                        'danger' => 0,
+                        'success' => 1,
+                    ]),
 
             ])
             ->filters([

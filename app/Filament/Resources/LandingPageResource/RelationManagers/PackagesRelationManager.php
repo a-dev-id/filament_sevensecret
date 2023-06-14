@@ -107,13 +107,13 @@ class PackagesRelationManager extends RelationManager
                     ->label('Image')
                     ->square(),
                 Tables\Columns\TextColumn::make('title'),
-                IconColumn::make('is_active')->label('Published')
-                    ->options([
-                        'heroicon-o-x-circle' => 0,
-                        'heroicon-o-check-circle' => 1,
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
                     ])
                     ->colors([
-                        'secondary' => 0,
+                        'danger' => 0,
                         'success' => 1,
                     ]),
             ])

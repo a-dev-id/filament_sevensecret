@@ -4,9 +4,10 @@ namespace App\Http\Controllers\Mobile;
 
 use App\Http\Controllers\Controller;
 use App\Models\Page;
+use App\Models\Spa;
 use Illuminate\Http\Request;
 
-class ContactUsController extends Controller
+class SpaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,9 @@ class ContactUsController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '14')->first();
-        return view('seven_secret_mobile.contact')->with(compact('setting'));
+        $setting = Page::where('is_active', '1')->where('id', '5')->first();
+        $spa_list = Spa::where('is_active', '1')->get();
+        return view('seven_secret_mobile.spa')->with(compact('setting', 'spa_list'));
     }
 
     /**

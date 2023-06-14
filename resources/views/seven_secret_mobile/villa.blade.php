@@ -18,7 +18,7 @@
 
 @section('villa_active', 'active')
 
-<x-elevate-bali-mobile>
+<x-seven-secret-mobile>
     <div class="wrapper page">
         <div class="header-page fixed-top">
             <div class="container-fluid">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid accommodation py-2">
+        <div class="container-fluid accommodation py-2 mb-5">
             <div class="row">
                 @foreach ($villa_list as $data)
                 <div class="col-12">
@@ -102,4 +102,4 @@
                 @endforeach
             </div>
         </div>
-</x-elevate-bali-mobile>
+</x-seven-secret-mobile>

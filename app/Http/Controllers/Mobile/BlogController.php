@@ -16,9 +16,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '10')->first();
+        $setting = Page::where('is_active', '1')->where('id', '15')->first();
         $blog_list = Blog::where('is_active', '1')->latest()->paginate(5);
-        return view('elevate_mobile.blog')->with(compact('setting', 'blog_list'));
+        return view('seven_secret_mobile.blog')->with(compact('setting', 'blog_list'));
     }
 
     /**

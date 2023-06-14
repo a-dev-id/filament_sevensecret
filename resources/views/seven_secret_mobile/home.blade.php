@@ -18,7 +18,7 @@
 
 @section('home_active', 'active')
 
-<x-elevate-bali-mobile>
+<x-seven-secret-mobile>
     <div class="wrapper ">
         <div class="position-relative">
             <div class="slider">
@@ -31,14 +31,14 @@
 
             </div>
             <div class="button-wrapper button-wrapper-home">
-                <a href="https://goo.gl/maps/Fz6h44MuRjT2yhMYA" class="btn btn-outline-light border-2" target="_blank"><i class="fa fa-map-marker me-1"></i> Get Directions</a>
+                <a href="https://goo.gl/maps/bb2yY8eDVvk1QRPw9" class="btn btn-outline-light border-2" target="_blank"><i class="fa fa-map-marker me-1"></i> Get Directions</a>
             </div>
             <div class="gradient-top"></div>
         </div>
         <div class="container-fluid about">
             <div class="row">
                 <div class="col-12 py-3">
-                    <img src="{{asset('images/logo.png')}}" class="m-auto img-logo mb-4" style="width: 70%">
+                    <img src="{{asset('images/logo-sevensecret.png')}}" class="m-auto img-logo mb-4" style="width: 70%">
                     <p class="mb-0">
                         {!! $setting->description !!}
                     </p>
@@ -88,21 +88,27 @@
                             <div class="col-12 h-90px">
                                 <div class="tiles">
                                     <img src="{{asset('images/maps.jpg')}}" alt="Maps">
-                                    <a href="https://goo.gl/maps/zBod1yFj1YRMUBfm9">Maps</a>
+                                    <a href="https://goo.gl/maps/bb2yY8eDVvk1QRPw9" target="_blank">Maps</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-12">
+                    <div class="col-12">
                         <div class="row g-1">
-                            <div class="col-12 h-150px">
+                            <div class="col-6 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$hidden_palace->banner_image)}}" alt="{{config('app.name')}} - {{$hidden_palace->page_name}}">
-                                    <a href="{{route('mhiddenpalace')}}">{{$hidden_palace->page_name}}</a>
+                                    <img src="{{asset('storage/'.$facilities->banner_image)}}" alt="{{config('app.name')}} - {{$facilities->page_name}}">
+                                    <a href="{{route('mfacility')}}">{{$facilities->page_name}}</a>
+                                </div>
+                            </div>
+                            <div class="col-6 h-150px">
+                                <div class="tiles">
+                                    <img src="{{asset('storage/'.$spa->banner_image)}}" alt="{{config('app.name')}} - {{$spa->page_name}}">
+                                    <a href="{{route('mspa')}}">{{$spa->page_name}}</a>
                                 </div>
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
                     <div class="col-5">
                         <div class="row g-1">
                             <div class="col-12 h-150px">
@@ -147,4 +153,4 @@
             </div>
         </div>
     </div>
-</x-elevate-bali-mobile>
+</x-seven-secret-mobile>

@@ -17,8 +17,8 @@ class ResortFacilityController extends Controller
     public function index()
     {
         $setting = Page::where('is_active', '1')->where('id', '6')->first();
-        $facilities_list = ResortFacility::where('is_active', '1')->get();
-        return view('seven_secret.facility')->with(compact('setting', 'facilities_list'));
+        $facility_list = ResortFacility::where('is_active', '1')->get();
+        return view('seven_secret_mobile.facility')->with(compact('setting', 'facility_list'));
     }
 
     /**

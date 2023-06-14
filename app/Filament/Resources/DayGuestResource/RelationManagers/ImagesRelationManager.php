@@ -41,13 +41,13 @@ class ImagesRelationManager extends RelationManager
             ->columns([
                 Tables\Columns\TextColumn::make('title'),
                 ImageColumn::make('image')->square(),
-                IconColumn::make('is_active')->label('Published')
-                    ->options([
-                        'heroicon-o-x-circle' => 0,
-                        'heroicon-o-check-circle' => 1,
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
                     ])
                     ->colors([
-                        'secondary' => 0,
+                        'danger' => 0,
                         'success' => 1,
                     ]),
                 Tables\Columns\TextColumn::make('created_at')

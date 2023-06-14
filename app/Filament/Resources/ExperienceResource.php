@@ -115,7 +115,6 @@ class ExperienceResource extends Resource
             ->columns([
                 ImageColumn::make('cover_image')->square()->label('Image'),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
-                Tables\Columns\TextColumn::make('is_active')->label('Published'),
                 Tables\Columns\BadgeColumn::make('is_active')->label('Status')
                     ->enum([
                         0 => 'Draft',

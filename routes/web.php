@@ -70,6 +70,7 @@ Route::get('/m/blog/{slug}', [App\Http\Controllers\Mobile\BlogController::class,
 Route::get('/m/dining', [App\Http\Controllers\Mobile\DiningController::class, 'index'])->name('mdining');
 Route::get('/m/hidden-palace', [App\Http\Controllers\Mobile\HiddenPalaceController::class, 'index'])->name('mhiddenpalace');
 Route::get('/m/activities', [App\Http\Controllers\Mobile\ExperienceController::class, 'index'])->name('mexperience');
+Route::get('/m/facilities', [App\Http\Controllers\Mobile\ResortFacilityController::class, 'index'])->name('mfacility');
 Route::get('/m/gallery', [App\Http\Controllers\Mobile\GalleryController::class, 'index'])->name('mgallery');
 Route::get('/m/offers', [App\Http\Controllers\Mobile\OfferController::class, 'index'])->name('moffer');
 Route::get('/m/spa', [App\Http\Controllers\Mobile\SpaController::class, 'index'])->name('mspa');

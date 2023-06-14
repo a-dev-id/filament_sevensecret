@@ -18,14 +18,15 @@ class HomeController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '1')->first();
         $villa = Page::where('is_active', '1')->where('id', '2')->first();
-        $experience = Page::where('is_active', '1')->where('id', '3')->first();
-        $dining = Page::where('is_active', '1')->where('id', '4')->first();
-        $offer = Page::where('is_active', '1')->where('id', '15')->first();
-        // $spa = Page::where('is_active', '1')->where('id', '5')->first();
-        $wedding = Page::where('is_active', '1')->where('id', '6')->first();
-        $blog = Page::where('is_active', '1')->where('id', '10')->first();
-        $honeymoon = Page::where('is_active', '1')->where('id', '5')->first();
-        return view('elevate_mobile.home')->with(compact('setting', 'villa', 'experience', 'dining', 'offer', /*'spa',*/ 'wedding', 'blog', 'honeymoon'));
+        $experience = Page::where('is_active', '1')->where('id', '4')->first();
+        $dining = Page::where('is_active', '1')->where('id', '3')->first();
+        $offer = Page::where('is_active', '1')->where('id', '17')->first();
+        $spa = Page::where('is_active', '1')->where('id', '5')->first();
+        $wedding = Page::where('is_active', '1')->where('id', '8')->first();
+        $blog = Page::where('is_active', '1')->where('id', '15')->first();
+        $honeymoon = Page::where('is_active', '1')->where('id', '7')->first();
+        $facilities = Page::where('is_active', '1')->where('id', '6')->first();
+        return view('seven_secret_mobile.home')->with(compact('setting', 'villa', 'experience', 'dining', 'offer', 'spa', 'wedding', 'blog', 'honeymoon', 'facilities'));
     }
 
     /**

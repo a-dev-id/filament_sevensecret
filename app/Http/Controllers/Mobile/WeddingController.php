@@ -18,7 +18,7 @@ class WeddingController extends Controller
     {
         $setting = Page::where('is_active', '1')->where('id', '8')->first();
         $wedding_list = Wedding::where('is_active', '1')->get();
-        return view('elevate_mobile.wedding')->with(compact('setting', 'wedding_list'));
+        return view('seven_secret_mobile.wedding')->with(compact('setting', 'wedding_list'));
     }
 
     /**
