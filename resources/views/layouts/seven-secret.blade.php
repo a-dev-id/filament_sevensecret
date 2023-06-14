@@ -133,18 +133,18 @@
                     <div class="border-top border-secondary py-4">
                         <h3 class="d-flex justify-content-between">Address <i class="fa fa-map-marker"></i></h3>
                     </div>
-                    <p class="fs-6">Munduk, Banjar<br />
-                        Kabupaten Buleleng - Bali<br />
-                        Indonesia<br>+62 821-4566-6738</p>
+                    <p class="fs-6 pe-4">Jl. Raya Pemenang No.KM 10, Malaka,
+                        Kec. Pemenang, Kab. Lombok Utara,
+                        Nusa Tenggara Barat, Indonesia<br>+62 821-4566-6738</p>
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="border-top border-secondary py-4">
                         <h3 class="d-flex justify-content-between">About <i class="fa fa-compass"></i></h3>
                     </div>
                     <nav class="nav flex-column fs-6">
-                        <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Story</a>
+                        <a href="{{route('story.index')}}" class="nav-link p-0 link-dark text-decoration-none">Story</a>
                         <a href="{{route('awards.index')}}" class="nav-link p-0 link-dark text-decoration-none">Awards</a>
-                        <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Press Room</a>
+                        <a href="{{route('press-room.index')}}" class="nav-link p-0 link-dark text-decoration-none">Press Room</a>
                         <a href="{{route('gallery.index')}}" class="nav-link p-0 link-dark text-decoration-none">Gallery</a>
                         <a href="{{route('contact-us.index')}}" class="nav-link p-0 link-dark text-decoration-none">Contact Us</a>
 
@@ -157,7 +157,7 @@
                     <nav class="nav flex-column fs-6">
                         <a href="{{route('policy-legal.index')}}" class="nav-link p-0 link-dark text-decoration-none">Policy & Legal</a>
                         <a href="{{route('blog.index')}}" class="nav-link p-0 link-dark text-decoration-none">Blog</a>
-                        <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">Careers</a>
+                        <a href="{{route('careers.index')}}" class="nav-link p-0 link-dark text-decoration-none">Careers</a>
                         {{-- <a href="javascript:void(0)" class="nav-link p-0 link-dark text-decoration-none">GDS Code</a> --}}
                     </nav>
                 </div>
@@ -169,11 +169,11 @@
                         <a href="https://www.instagram.com/elevate.bali" class="nav-link link-share link-share-instagram rounded-circle m-0 border-1 me-2" target="_blank"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.facebook.com/elevateresortbali" class="nav-link link-share link-share-facebook rounded-circle m-0 border-1 me-2" target="_blank"><i class="fa fa-facebook"></i></a>
                     </nav>
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-12 col-md-6">
                             <a target="_blank" href="https://www.luxurialifestyle.com/discovering-balis-best-luxury-resorts/"><img src="{{asset('images/elevate-award.png')}}" class="w-100"></a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-12 py-md-5 border-bottom border-secondary"></div>
             </div>

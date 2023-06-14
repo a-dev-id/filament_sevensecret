@@ -1,15 +1,15 @@
 @section('meta')
-<meta name="title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta name="title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="description" content="{{ $setting->meta_description }}">
 <meta name="keywords" content="{{ implode(',', $setting->meta_keyword) }}">
-<title>{{ $setting->meta_title }}</title>
+<title>{{ $setting->meta_title }} | {{config('app.name')}}</title>
 <meta property="og:url" content="{{ route('activities.index') }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta property="og:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
 <meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
 
-<meta name="twitter:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta name="twitter:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
 <meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
 
@@ -65,8 +65,8 @@
                 <div class="container">
                     <div class="row">
                         @if($loop->iteration % 2 == 0) <div class="col-12 col-md-5 d-flex flex-column justify-content-between order-3"> @else <div class="col-12 col-md-5 d-flex flex-column justify-content-between order-1"> @endif
-                                <div class="pb-4 border-bottom border-dark">
-                                    <h2 class="fs-1 mb-3">{{$data->title}}</h2>
+                                <div class="pb-2 border-bottom border-dark">
+                                    <h2 class="fs-2 mb-3 fw-bold text-uppercase">{{$data->title}}</h2>
                                     <h5 class="fs-6 text-primary">{{$data->subtitle}}</h5>
                                 </div>
                                 <div class="py-3 h-100">

@@ -61,7 +61,7 @@
                             <div class="text-white d-flex justify-content-between align-items-center w-100 pe-4">
                                 <div class="leftline position-relative ps-5">
                                     <div class="px-3">
-                                        <h2 class="fs-4 fw-bold mb-1">{{$data->title}}</h2>
+                                        <h2 class="fs-4 fw-bold mb-1 text-uppercase">{{$data->title}}</h2>
                                         <p class="small mb-0">{{$data->excerpt}}</p>
                                     </div>
                                 </div>

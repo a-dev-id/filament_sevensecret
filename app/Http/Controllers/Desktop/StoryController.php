@@ -15,7 +15,7 @@ class StoryController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '11')->first();
+        $setting = Page::where('is_active', '1')->where('id', '10')->first();
         return view('seven_secret.story')->with(compact('setting'));
     }
 

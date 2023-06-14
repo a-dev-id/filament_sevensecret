@@ -15,7 +15,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '8')->first();
+        $setting = Page::where('is_active', '1')->where('id', '13')->first();
         return view('seven_secret.contact')->with(compact('setting'));
     }
 

@@ -114,8 +114,8 @@ class DiningResource extends Resource
     {
         return $table
             ->columns([
+                ImageColumn::make('cover_image')->square()->label('Image'),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
-                ImageColumn::make('banner_image')->square(),
                 Tables\Columns\TextColumn::make('is_active')->label('Published'),
                 Tables\Columns\BadgeColumn::make('is_active')->label('Status')
                     ->enum([

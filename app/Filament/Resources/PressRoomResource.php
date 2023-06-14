@@ -33,7 +33,7 @@ class PressRoomResource extends Resource
         return $form
             ->schema([
                 TextInput::make('title'),
-                FileUpload::make('cover_image')->label('Image'),
+                FileUpload::make('cover_image')->label('Image')->directory('press_room'),
                 RichEditor::make('description'),
                 Toggle::make('is_active')
                     ->label('Publish')

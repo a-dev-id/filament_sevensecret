@@ -38,7 +38,7 @@ Route::resource('/honeymoon', App\Http\Controllers\Desktop\HoneymoonController::
 Route::resource('/story', App\Http\Controllers\Desktop\StoryController::class);
 Route::resource('/policy-legal', App\Http\Controllers\Desktop\PolicyLegalController::class);
 Route::resource('/awards', App\Http\Controllers\Desktop\AwardController::class);
-Route::resource('/press', App\Http\Controllers\Desktop\PressController::class);
+Route::resource('/press-room', App\Http\Controllers\Desktop\PressController::class);
 Route::resource('/videos', App\Http\Controllers\Desktop\VideoController::class);
 // Route::resource('/day-guest', App\Http\Controllers\Desktop\DayGuestController::class);
 

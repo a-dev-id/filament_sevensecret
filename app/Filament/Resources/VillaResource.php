@@ -84,8 +84,8 @@ class VillaResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image'),
-                                FileUpload::make('cover_image')->label('Cover Image'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('villa/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('villa/cover'),
                             ]),
                         ])
                         ->collapsible()
@@ -122,8 +122,8 @@ class VillaResource extends Resource
     {
         return $table
             ->columns([
+                ImageColumn::make('banner_image')->label('Image')->square(),
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
-                ImageColumn::make('banner_image')->square(),
                 Tables\Columns\TextColumn::make('is_active')->label('Published'),
                 Tables\Columns\BadgeColumn::make('is_active')->label('Status')
                     ->enum([

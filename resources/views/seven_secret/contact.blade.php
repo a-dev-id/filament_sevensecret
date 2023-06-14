@@ -1,15 +1,15 @@
 @section('meta')
-<meta name="title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta name="title" content="{{ $setting->meta_title }}| {{config('app.name')}}">
 <meta name="description" content="{{ $setting->meta_description }}">
 <meta name="keywords" content="{{ implode(',', $setting->meta_keyword) }}">
-<title>{{ $setting->meta_title }}</title>
+<title>{{ $setting->meta_title }} | {{config('app.name')}}</title>
 <meta property="og:url" content="{{ route('contact-us.index') }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta property="og:title" content="{{ $setting->meta_title }}| {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
 <meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
 
-<meta name="twitter:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
+<meta name="twitter:title" content="{{ $setting->meta_title }}| {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
 <meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
 
@@ -58,13 +58,13 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <i class="fs-1 fa fa-map-marker"></i>
-                    <p class="fs-5 mt-4 mb-0">Munduk, Banjar
-                        Kabupaten Buleleng - Bali
-                        Indonesia</p>
+                    <p class="fs-5 pt-2">Jl. Raya Pemenang No.KM 10, Malaka,
+                        Kec. Pemenang, Kab. Lombok Utara,
+                        Nusa Tenggara Barat, Indonesia</p>
                 </div>
                 <div class="col-12 col-md-4">
                     <i class="fs-1 fa fa-envelope"></i>
-                    <p class="fs-5 mt-4 mb-0">reservations@elevatebali.com</p>
+                    <p class="fs-5 mt-4 mb-0">reservations@sevensecretsresorts.com</p>
                 </div>
                 <div class="col-12 my-4">
                     <a href="http://wa.me/6282145666738" target="_blank" class="btn btn-whatsapp border-0 rounded-0 d-inline-flex p-0">
@@ -75,11 +75,11 @@
                 <div class="col-12">
                     <div class="mb-3">
                         <h3 class="fw-bold">General Enquiries</h3>
-                        <a href="mailto:info@elevatebali.com" class="fs-5 text-decoration-none link-dark">info@elevatebali.com</a>
+                        <a href="mailto:info@sevensecretsresorts.com" class="fs-5 text-decoration-none link-dark">info@sevensecretsresorts.com</a>
                     </div>
                     <div class="mt-1">
                         <h3 class="fw-bold">Sales</h3>
-                        <a href="mailto:ssm@elevatebali.com" class="fs-5 text-decoration-none link-dark">ssm@elevatebali.com</a>
+                        <a href="mailto:ssm@sevensecretsresorts.com" class="fs-5 text-decoration-none link-dark">ssm@sevensecretsresorts.com</a>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
         <div class="container-fluid px-0">
             <div class="row gx-0">
                 <div class="col-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4986.8063648195875!2d115.07833411535934!3d-8.271233694048732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd187ff4f0f1dd5%3A0x6ca5a9c8030285a4!2sELEVATE%20BALI%20by%20HANGING%20GARDENS%20MUNDUK!5e1!3m2!1sen!2sid!4v1637821288203!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4152.808820475982!2d116.04592373372977!3d-8.428285441811916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcddd537ea4ceb5%3A0xde92945bc8e915e0!2sSeven%20Secrets%20Resort%20by%20Hanging%20Gardens!5e1!3m2!1sen!2sid!4v1686715753101!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
