@@ -68,8 +68,8 @@
                 <div class="booking-form-wrapper">
                     <div class="booking-form-wrapper-inner">
                         {{-- <form class="d-flex h-100" action="https://book-directonline.com/properties/elevatebalibyhanginggardendirect?checkInDate={{date('Y-m-d')}}&checkOutDate={{date('Y-m-d',strtotime('+1 day'))}}&trackPage=yes" method="get" target="_blank"> --}}
-                            <form class="d-flex h-100" action="https://www.e1-booking.com/booking/booking-page.php?checkin={{date('d-m-Y')}}&checkout={{date('d-m-Y',strtotime('+1 day'))}}&id=3169&promo=" method="get" target="_blank">
-                                <input type="hidden" name="id" value="2583">
+                            <form class="d-flex h-100" action="https://www.e1-booking.com/booking/booking-page.php?checkin={{date('d-m-Y')}}&checkout={{date('d-m-Y',strtotime('+1 day'))}}&promo=" method="get" target="_blank">
+                                <input type="hidden" name="id" value="3169">
                                 <div class="col px-1 position-relative h-100">
                                     <label class="booking-field-text">Arrival</label>
                                     <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="fromDate" value="{{date('d-m-Y')}}" readonly="true">
