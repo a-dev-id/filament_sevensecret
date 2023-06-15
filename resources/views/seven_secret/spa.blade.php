@@ -65,13 +65,14 @@
                             <a href="tel:+62 821 4566 6738" class="link-dark text-decoration-none d-block mb-0">+62 821 4566 6738</a>
                         </p>
                     </div>
-                    {{-- <div class="mt-1">
-                        <a href="mailto:reservations@elevatebali.com" class="btn btn-primary text-uppercase px-3 py-2 rounded-0 small"> Book a Table</a>
-                    </div> --}}
+                    <div class="mt-1">
+                        <a href="mailto:reservations@elevatebali.com" class="btn btn-primary text-uppercase px-3 py-2 rounded-0 small"> Inquiry Now</a>
+                    </div>
                 </div>
                 <div class="col-12 col-md-8 ps-5">
                     {{-- <h5 class="fw-bold mb-3">{{$setting->excerpt}}</h5> --}}
                     <div class="lh-lg">{!! $setting->description !!}</div>
+
                 </div>
             </div>
         </div>
