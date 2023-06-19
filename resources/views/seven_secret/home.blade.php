@@ -170,7 +170,7 @@
         </div>
     </section> --}}
 
-    <section class="py-5">
+    <section class="pb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
