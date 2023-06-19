@@ -131,7 +131,7 @@
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLw8fGZ6fiQLDJFgAGgnwqjoTEvBH1pd8r&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;playlist=9RA48trBz24" class="header-iframe-youtube"></iframe>
     </section>
 
-    <section class="py-5 bg-light-gray">
+    <section class="py-90">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
