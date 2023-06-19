@@ -126,7 +126,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center mb-5 underline">Other Accommodations</h2>
+                    <h2 class="text-center mb-5 underline text-uppercase">Other Accommodations</h2>
                     <div class="position-relative" id="accommodation-slides">
                         <div class="sliders with-half-slides overflow-hidden">
 
