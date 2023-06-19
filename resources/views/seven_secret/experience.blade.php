@@ -396,7 +396,7 @@
                                                                         <script>
                                                                             $('#reserveddate_enquiry{{$data->id}}').datepicker({
                                                                                                                             format: 'dd-mm-yyyy',
-                                                                                                                            startDate: "08-02-2023",
+                                                                                                                            startDate: "{{date("d-m-Y")}}",
                                                                                                                             autoclose: true
                                                                                                                             });
                                                                         </script>
