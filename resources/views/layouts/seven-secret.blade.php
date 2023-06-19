@@ -21,7 +21,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/seven_secrets.css') }}">
 
     @stack('css')
-    @vite('resources/js/app.js')
 
     @php
     $header = App\Models\CssScript::where('section', 'header')->first();
