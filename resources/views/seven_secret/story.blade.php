@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="fw-bold text-uppercase mb-5 underline text-center">{{ $setting->title }}</h1>
-                    {!! $setting->description !!}
+                    <span class="text-center">{!! $setting->description !!}</span>
                 </div>
             </div>
         </div>
