@@ -76,8 +76,8 @@ class ResortFacilityResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image')->directory('resort_facility/header'),
-                                FileUpload::make('cover_image')->label('Cover Image')->directory('resort_facility/cover'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('storage/resort_facility/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('storage/resort_facility/cover'),
                             ]),
                         ])
                         ->collapsible()

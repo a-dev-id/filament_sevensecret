@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | Hanging Gardens of Bali">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('mblog.show',[$setting->slug]) }}" />
 @endsection
@@ -45,7 +45,7 @@
         <div class="container-fluid activities py-2">
             <div class="row">
                 <div class="col-12 my-3">
-                    <img src="{{asset('storage/'.$blog_detail->cover_image)}}" class="w-100" alt="{{$blog_detail->title}}">
+                    <img src="{{asset($blog_detail->cover_image)}}" class="w-100" alt="{{$blog_detail->title}}">
                     <h1 class="my-3">{{$blog_detail->title}}</h1>
                     <div class="d-flex share-article">
                         <p class="about">Share this article : </p>

@@ -27,7 +27,7 @@ class ImagesRelationManager extends RelationManager
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                FileUpload::make('image'),
+                FileUpload::make('image')->directory('storage/offers/cover/gallery'),
                 Toggle::make('is_active')
                     ->offColor('secondary')
                     ->onColor('primary')

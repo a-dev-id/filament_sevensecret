@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | Hanging Gardens of Bali">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('mvilla') }}" />
 @endsection
@@ -41,7 +41,7 @@
                             <div class="slider mb-2">
                                 @foreach ($data->images as $subdata)
                                 <div class="ratio ratio-16x9">
-                                    <img src="{{asset('storage/'.$subdata->image)}}" class="img-fluid" alt="{{$subdata->title}}">
+                                    <img src="{{asset($subdata->image)}}" class="img-fluid" alt="{{$subdata->title}}">
                                 </div>
                                 @endforeach
                             </div>
@@ -80,7 +80,7 @@
                                                 <div class="d-flex justify-content-center">
                                                     <ul class="text-start list-unstyled" style="column-count: 2;">
                                                         @foreach ($data->facilities as $subdata)
-                                                        <li class="px-1 pt-2"><img src="{{asset('storage/'.$subdata->icon)}}" style="width: 20px;" class="pe-1">{{$subdata->title}}</li>
+                                                        <li class="px-1 pt-2"><img src="{{asset($subdata->icon)}}" style="width: 20px;" class="pe-1">{{$subdata->title}}</li>
                                                         @endforeach
                                                     </ul>
                                                 </div>

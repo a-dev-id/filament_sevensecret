@@ -76,8 +76,8 @@ class DiningResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image')->directory('dining/header'),
-                                FileUpload::make('cover_image')->label('Cover Image')->directory('dining/cover'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('storage/dining/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('storage/dining/cover'),
                             ]),
                         ])
                         ->collapsible()

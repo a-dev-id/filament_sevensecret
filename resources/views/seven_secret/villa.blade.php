@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | Elevate Bali by Hanging Gardens">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('accommodations.index') }}" />
 @endsection
@@ -25,7 +25,7 @@
 <x-seven-secret>
     <section class="slider-section">
         <div class="vh-100 overflow-hidden position-relative">
-            <img src="{{asset('storage/'.$setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
+            <img src="{{asset($setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
         </div>
     </section>
     <section class="py-90">
@@ -50,7 +50,7 @@
                             @foreach ($data->images as $subdata)
                             @if ($subdata->is_active == '1')
                             <div class="ratio ratio-4x3">
-                                <img src="{{ asset('storage/' . $subdata->image) }}" class="w-100 object-fit-cover object-position-center" alt="{{ $data->title . ' - ' . $subdata->title }}">
+                                <img src="{{ asset($subdata->image) }}" class="w-100 object-fit-cover object-position-center" alt="{{ $data->title . ' - ' . $subdata->title }}">
                             </div>
                             @else
                             @endif

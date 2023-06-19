@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('index') }}" />
 @endsection
@@ -181,7 +181,7 @@
                             @foreach ($villa_list as $data)
                             <div class="position-relative">
                                 <div class="ratio ratio-4x3">
-                                    <img src="{{asset('storage/'.$data->banner_image)}}" alt="{{$data->title}}" class="w-100 object-fit-cover object-position-center">
+                                    <img src="{{asset($data->banner_image)}}" alt="{{$data->title}}" class="w-100 object-fit-cover object-position-center">
                                 </div>
                                 <div class="position-absolute bottom-0 w-100 h-50 d-flex align-items-end pb-4 bg-black-white-gradient">
                                     <div class="text-white d-flex justify-content-between align-items-center w-100 pe-4">
@@ -225,7 +225,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="ratio ratio-1x1">
-                                <img src="{{asset('storage/'.$data->cover_image)}}" alt="{{$data->title.' - '.$data->subtitle}}" class="w-100 object-fit-cover object-position-center">
+                                <img src="{{asset($data->cover_image)}}" alt="{{$data->title.' - '.$data->subtitle}}" class="w-100 object-fit-cover object-position-center">
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                         <div class="mx-1">
                             <div class="position-relative">
                                 <div class="ratio ratio-1x1">
-                                    <img src="{{asset('storage/'.$data->cover_image)}}" alt="{{$data->title}}" class="w-100 object-fit-cover object-position-center">
+                                    <img src="{{asset($data->cover_image)}}" alt="{{$data->title}}" class="w-100 object-fit-cover object-position-center">
                                 </div>
                                 <div class="position-absolute bottom-0 w-100 h-100 d-flex align-items-center bg-hover-overlay">
                                     <div class="text-white w-100">

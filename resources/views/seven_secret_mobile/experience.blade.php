@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->cover_image) }}">
+<meta property="og:image" content="{{ asset($setting->cover_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | Hanging Gardens of Bali">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->cover_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->cover_image) }}">
 
 <link rel="canonical" href="{{ route('mexperience') }}" />
 @endsection
@@ -47,7 +47,7 @@
                     <div class="row gx-1 py-3 @if ($loop->last) @else border-bottom @endif">
                         <div class="col-5">
                             <div class="ratio ratio-1x1">
-                                <img src="{{asset('storage/'.$data->cover_image)}}" class="img-fluid" alt="{{$data->title}}">
+                                <img src="{{asset($data->cover_image)}}" class="img-fluid" alt="{{$data->title}}">
                             </div>
                         </div>
                         <div class="col-7 ps-2 d-flex flex-column justify-content-between">

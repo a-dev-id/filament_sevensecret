@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('accommodations.show',[$setting->slug]) }}" />
 @endsection
@@ -54,7 +54,7 @@
 <x-seven-secret>
     <section class="slider-section">
         <div class="vh-100 overflow-hidden position-relative">
-            <img src="{{asset('storage/'.$setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
+            <img src="{{asset($setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
         </div>
     </section>
     <section class="py-90">
@@ -78,7 +78,7 @@
                             @foreach ($setting->facilities as $data)
                             @if ($data->is_active == '1')
                             <li class="col-12 col-md-6 py-2 d-flex small">
-                                <img src="{{ asset('storage/' . $data->icon) }}" class="h-20px me-2">
+                                <img src="{{ asset($data->icon) }}" class="h-20px me-2">
                                 <span>{{ $data->title }}</span>
                             </li>
                             @else
@@ -99,7 +99,7 @@
                         @foreach ($setting->images as $data)
                         @if ($data->is_active == '1')
                         <div class="ratio ratio-4x3">
-                            <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $setting->title . ' - ' . $data->title }}" class="w-100 object-fit-cover object-position-center">
+                            <img src="{{ asset($data->image) }}" alt="{{ $setting->title . ' - ' . $data->title }}" class="w-100 object-fit-cover object-position-center">
                         </div>
                         @else
                         @endif
@@ -111,7 +111,7 @@
                         @foreach ($setting->images as $data)
                         @if ($data->is_active == '1')
                         <div class="ratio ratio-16x9 mx-1">
-                            <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $setting->title . ' - ' . $data->title }}" class="w-100 object-fit-cover object-position-center">
+                            <img src="{{ asset($data->image) }}" alt="{{ $setting->title . ' - ' . $data->title }}" class="w-100 object-fit-cover object-position-center">
                         </div>
                         @else
                         @endif
@@ -136,7 +136,7 @@
                             @if ($data->is_active == '1')
                             <div class="position-relative ">
                                 <div class="ratio ratio-4x3">
-                                    <img src="{{ asset('storage/' . $data->banner_image) }}" alt="{{ $data->title }}" class="w-100 object-fit-cover object-position-center">
+                                    <img src="{{ asset($data->banner_image) }}" alt="{{ $data->title }}" class="w-100 object-fit-cover object-position-center">
                                 </div>
                                 <div class="position-absolute bottom-0 w-100 h-50 d-flex align-items-end pb-4 bg-black-white-gradient">
                                     <div class="text-white d-flex justify-content-between align-items-center w-100 pe-4">

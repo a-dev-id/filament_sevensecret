@@ -86,8 +86,8 @@ class PageResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image')->directory('page/header'),
-                                FileUpload::make('cover_image')->label('Cover Image')->directory('page/cover'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('storage/page/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('storage/page/cover'),
                             ]),
                         ])
                         ->collapsible()

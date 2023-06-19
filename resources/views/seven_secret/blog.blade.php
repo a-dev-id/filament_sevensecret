@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('blog.index') }}" />
 @endsection
@@ -30,7 +30,7 @@
 
 <x-seven-secret>
     <section class="vh-100">
-        <img src="{{ asset('storage/' . $setting->banner_image) }}" alt="{{ $setting->title }}" class="h-100 w-100 object-fit-cover object-position-center">
+        <img src="{{ asset($setting->banner_image) }}" alt="{{ $setting->title }}" class="h-100 w-100 object-fit-cover object-position-center">
     </section>
 
     <section class="py-90">
@@ -53,7 +53,7 @@
                     <div class="row border-bottom py-3">
                         <div class="col-12 col-lg-3 col-md-4">
                             <div class="ratio ratio-1x1">
-                                <img src="{{asset('storage/'.$data->cover_image)}}" class="w-100 object-fit-cover object-position-center" alt="{{$setting.' - '.$data->title}}">
+                                <img src="{{asset($data->cover_image)}}" class="w-100 object-fit-cover object-position-center" alt="{{$setting.' - '.$data->title}}">
                             </div>
                         </div>
                         <div class="col-12 col-lg-9 col-md-8 ps-md-3 d-flex flex-column justify-content-between">

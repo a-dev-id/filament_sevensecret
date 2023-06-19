@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('weddings.index') }}" />
 @endsection
@@ -38,7 +38,7 @@
 <x-seven-secret>
     <section class="slider-section">
         <div class="vh-100 overflow-hidden position-relative">
-            <img src="{{asset('storage/'.$setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
+            <img src="{{asset($setting->banner_image)}}" alt="{{$setting->title}}" class="h-100 w-100 object-fit-cover object-position-center">
         </div>
     </section>
     <section class="py-90">
@@ -762,7 +762,7 @@
                             @if($loop->iteration % 2 == 0) <div class="col-12 col-md-6 order-1"> @else <div class="col-12 col-md-6 order-3"> @endif
                                     <div class="h-100 slider">
                                         <div class="ratio ratio-4x3">
-                                            <img src="{{asset('storage/'.$data->cover_image)}}" alt="{{$data->title}}" class="w-100 object-fit-cover object-position-center h-100">
+                                            <img src="{{asset($data->cover_image)}}" alt="{{$data->title}}" class="w-100 object-fit-cover object-position-center h-100">
                                         </div>
                                     </div>
                                 </div>

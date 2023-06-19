@@ -75,8 +75,8 @@ class ExperienceResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image')->directory('experiences/header'),
-                                FileUpload::make('cover_image')->label('Cover Image')->directory('experiences/cover'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('storage/experiences/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('storage/experiences/cover'),
                             ]),
                         ])
                         ->collapsible()

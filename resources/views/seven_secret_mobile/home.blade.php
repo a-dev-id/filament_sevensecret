@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | Hanging Gardens of Bali">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('mindex') }}" />
 @endsection
@@ -25,7 +25,7 @@
 
                 @foreach ($setting->images as $data)
                 <div class="ratio ratio-4x3">
-                    <img src="{{asset('storage/'.$data->image)}}" class="img-fluid" alt="{{ config('app.name').' - '.$data->title }}">
+                    <img src="{{asset($data->image)}}" class="img-fluid" alt="{{ config('app.name').' - '.$data->title }}">
                 </div>
                 @endforeach
 
@@ -65,13 +65,13 @@
                         <div class="row g-1">
                             <div class="col-12 h-90px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$villa->banner_image)}}" alt="{{config('app.name')}} - {{$villa->page_name}}">
+                                    <img src="{{asset($villa->banner_image)}}" alt="{{config('app.name')}} - {{$villa->page_name}}">
                                     <a href="{{route('mvilla')}}">{{$villa->page_name}}</a>
                                 </div>
                             </div>
                             <div class="col-12 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$experience->banner_image)}}" alt="{{config('app.name')}} - {{$experience->page_name}}">
+                                    <img src="{{asset($experience->banner_image)}}" alt="{{config('app.name')}} - {{$experience->page_name}}">
                                     <a href="{{route('mexperience')}}">{{$experience->page_name}}</a>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                         <div class="row g-1">
                             <div class="col-12 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$offer->banner_image)}}" alt="{{config('app.name')}} - {{$offer->page_name}}">
+                                    <img src="{{asset($offer->banner_image)}}" alt="{{config('app.name')}} - {{$offer->page_name}}">
                                     <a href="{{route('moffer')}}">{{$offer->page_name}}</a>
                                 </div>
                             </div>
@@ -97,13 +97,13 @@
                         <div class="row g-1">
                             <div class="col-6 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$facilities->banner_image)}}" alt="{{config('app.name')}} - {{$facilities->page_name}}">
+                                    <img src="{{asset($facilities->banner_image)}}" alt="{{config('app.name')}} - {{$facilities->page_name}}">
                                     <a href="{{route('mfacility')}}">{{$facilities->page_name}}</a>
                                 </div>
                             </div>
                             <div class="col-6 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$spa->banner_image)}}" alt="{{config('app.name')}} - {{$spa->page_name}}">
+                                    <img src="{{asset($spa->banner_image)}}" alt="{{config('app.name')}} - {{$spa->page_name}}">
                                     <a href="{{route('mspa')}}">{{$spa->page_name}}</a>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
                         <div class="row g-1">
                             <div class="col-12 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$dining->banner_image)}}" alt="{{config('app.name')}} - {{$dining->page_name}}">
+                                    <img src="{{asset($dining->banner_image)}}" alt="{{config('app.name')}} - {{$dining->page_name}}">
                                     <a href="{{route('mdining')}}">{{$dining->page_name}}</a>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                         <div class="row g-1">
                             <div class="col-12 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$wedding->banner_image)}}" alt="{{config('app.name')}} - {{$wedding->page_name}}">
+                                    <img src="{{asset($wedding->banner_image)}}" alt="{{config('app.name')}} - {{$wedding->page_name}}">
                                     <a href="{{route('mwedding')}}">{{$wedding->page_name}}</a>
                                 </div>
                             </div>
@@ -133,7 +133,7 @@
                         <div class="row g-1">
                             <div class="col-12 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$honeymoon->banner_image)}}" alt="{{config('app.name')}} - {{$honeymoon->page_name}}">
+                                    <img src="{{asset($honeymoon->banner_image)}}" alt="{{config('app.name')}} - {{$honeymoon->page_name}}">
                                     <a href="{{route('mhoneymoon')}}">{{$honeymoon->page_name}}</a>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                         <div class="row g-1">
                             <div class="col-12 h-150px">
                                 <div class="tiles">
-                                    <img src="{{asset('storage/'.$blog->banner_image)}}" alt="{{config('app.name')}} - {{$blog->page_name}}">
+                                    <img src="{{asset($blog->banner_image)}}" alt="{{config('app.name')}} - {{$blog->page_name}}">
                                     <a href="{{route('mblog')}}">{{$blog->page_name}}</a>
                                 </div>
                             </div>

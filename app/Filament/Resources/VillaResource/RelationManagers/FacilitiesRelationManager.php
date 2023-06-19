@@ -28,7 +28,7 @@ class FacilitiesRelationManager extends RelationManager
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                FileUpload::make('icon')->directory('facility'),
+                FileUpload::make('icon')->directory('storage/villa/facility'),
                 Toggle::make('is_active')
                     ->label('Publish')
                     ->onColor('primary')

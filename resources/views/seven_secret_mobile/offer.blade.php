@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | Hanging Gardens of Bali">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('moffer') }}" />
 @endsection
@@ -48,7 +48,7 @@
                 @foreach ($offer_list as $data)
                 <div class="col-12 pt-2">
                     <div class="card shadow-sm text-dark mb-2">
-                        <img src="{{asset('storage/'.$data->cover_image)}}" class="card-img-top" alt="{{ $setting->title.' - '.$data->title }}">
+                        <img src="{{asset($data->cover_image)}}" class="card-img-top" alt="{{ $setting->title.' - '.$data->title }}">
                         <div class="card-body p-2">
                             <h2 class="card-title mb-1">{{$data->title}}</h2>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#{{$data->slug}}" class="btn btn-outline-custom rounded-0 mt-1" style="font-size: 60%;">View Detail</a>

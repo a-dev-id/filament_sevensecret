@@ -42,7 +42,7 @@ class ReviewResource extends Resource
                 Grid::make(1)
                     ->schema([
                         RichEditor::make('comment'),
-                        FileUpload::make('avatar')->directory('review'),
+                        FileUpload::make('avatar')->directory('storage/review'),
                     ]),
 
                 TextInput::make('source'),

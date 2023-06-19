@@ -47,8 +47,8 @@ class CustomFieldsRelationManager extends RelationManager
                     Section::make('Additional')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Banner Image'),
-                                FileUpload::make('cover_image')->label('Cover Image'),
+                                FileUpload::make('banner_image')->label('Banner Image')->directory('storage/page/header/custom'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('storage/page/cover/custom'),
                             ]),
                             Grid::make(2)->schema([
                                 Forms\Components\TextInput::make('button_text')

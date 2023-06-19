@@ -3,10 +3,13 @@
 namespace App\Filament\Resources\ResortFacilityResource\RelationManagers;
 
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Toggle;
 use Filament\Resources\Form;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -23,6 +26,11 @@ class ImagesRelationManager extends RelationManager
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
+                FileUpload::make('image')->directory('storage/resort_facility/cover/gallery'),
+                Toggle::make('is_active')
+                    ->offColor('secondary')
+                    ->onColor('primary')
+                    ->inline(false)
             ]);
     }
 
@@ -31,6 +39,16 @@ class ImagesRelationManager extends RelationManager
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title'),
+                ImageColumn::make('image')->square(),
+                Tables\Columns\BadgeColumn::make('is_active')->label('Status')
+                    ->enum([
+                        0 => 'Draft',
+                        1 => 'Published',
+                    ])
+                    ->colors([
+                        'danger' => 0,
+                        'success' => 1,
+                    ]),
             ])
             ->filters([
                 //

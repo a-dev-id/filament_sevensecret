@@ -77,8 +77,8 @@ class OfferResource extends Resource
                     Section::make('Image')
                         ->schema([
                             Grid::make(2)->schema([
-                                FileUpload::make('banner_image')->label('Header Image')->directory('offers/header'),
-                                FileUpload::make('cover_image')->label('Cover Image')->directory('offers/cover'),
+                                FileUpload::make('banner_image')->label('Header Image')->directory('storage/offers/header'),
+                                FileUpload::make('cover_image')->label('Cover Image')->directory('storage/offers/cover'),
                             ]),
                         ])
                         ->collapsible()

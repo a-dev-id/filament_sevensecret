@@ -7,11 +7,11 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
-<meta property="og:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta property="og:image" content="{{ asset($setting->banner_image) }}">
 
 <meta name="twitter:title" content="{{ $setting->meta_title }} | {{config('app.name')}}">
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
-<meta name="twitter:image" content="{{ asset('storage/' . $setting->banner_image) }}">
+<meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
 <link rel="canonical" href="{{ route('blog.show',[$setting->slug]) }}" />
 @endsection
@@ -24,7 +24,7 @@
 
 <x-seven-secret>
     <section class="header-image">
-        <img src="{{ asset('storage/' . $setting->banner_image) }}" alt="{{ $setting->title }}" class="w-100 vh-100">
+        <img src="{{ asset($setting->banner_image) }}" alt="{{ $setting->title }}" class="w-100 vh-100">
     </section>
 
     <section class="py-90 pb-5">
