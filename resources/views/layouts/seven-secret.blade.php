@@ -73,13 +73,13 @@
                                     <label class="booking-field-text">Arrival</label>
                                     <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="fromDate" value="{{date('d-m-Y')}}" readonly="true">
                                     <i class="fa fa-calendar booking-field-icon"></i>
-                                    <input type="hidden" name="checkInDate" class="datepicker-input" value="{{date('d-m-Y')}}">
+                                    <input type="hidden" name="checkin" class="datepicker-input" value="{{date('d-m-Y')}}">
                                 </div>
                                 <div class="col px-1 position-relative h-100">
                                     <label class="booking-field-text">Departure</label>
                                     <input type="text" class="form-control booking-field-input h-100 w-100 datepicker" id="toDate" value="{{date('d-m-Y',strtotime('+1 day'))}}" readonly="true">
                                     <i class="fa fa-calendar booking-field-icon"></i>
-                                    <input type="hidden" name="checkOutDate" class="datepicker-input" value="{{date('d-m-Y',strtotime('+1 day'))}}">
+                                    <input type="hidden" name="checkout" class="datepicker-input" value="{{date('d-m-Y',strtotime('+1 day'))}}">
                                 </div>
                                 <div class="col px-1 position-relative h-100">
                                     <label class="booking-field-text">Guests</label>
