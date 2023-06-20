@@ -15,7 +15,7 @@ class ThankYouController extends Controller
      */
     public function index()
     {
-        $setting = Page::where('is_active', '1')->where('id', '16')->first();
+        $setting = Page::where('is_active', '1')->where('id', '18')->first();
         return view('seven_secret.thank-you')->with(compact('setting'));
     }
 
