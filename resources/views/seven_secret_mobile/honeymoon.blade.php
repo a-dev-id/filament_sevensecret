@@ -47,7 +47,7 @@
                     <div class="row gx-1 py-3 @if ($loop->last) @else border-bottom @endif">
                         <div class="col-5">
                             <div class="ratio ratio-1x1">
-                                <img src="{{$data->cover_image)}}" class="img-fluid" alt="{{$data->title}}">
+                                <img src="{{$data->cover_image}}" class="img-fluid" alt="{{$data->title}}">
                             </div>
                         </div>
                         <div class="col-7 ps-2 d-flex flex-column justify-content-between">

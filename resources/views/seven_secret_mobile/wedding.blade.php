@@ -458,7 +458,7 @@
                         <a href="{{route('mindex')}}" class="link-dark"><i class="bi bi-chevron-left"></i></a>
                     </div>
                     <div class="col-11 ps-1">
-                        <h1>{{$setting->title}}</h1>
+                        <h1>{{$setting->page_name}}</h1>
                     </div>
                 </div>
             </div>
@@ -468,7 +468,7 @@
                 <div class="row">
                     <div class="col-12 py-3">
                         {{-- <img src="{{asset('storage/'.$setting->banner_image)}}" class="m-auto mb-4 w-100"> --}}
-                        <h1 class="text-center">{{$setting->page_name}}</h1>
+                        <h1 class="text-center">{{$setting->title}}</h1>
                         <p class="mb-0">
                             {!! $setting->description !!}
                         </p>

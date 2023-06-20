@@ -34,7 +34,7 @@
                         <a href="{{route('mindex')}}" class="link-dark"><i class="bi bi-chevron-left"></i></a>
                     </div>
                     <div class="col-11 ps-1">
-                        <h1>{{$setting->title}}</h1>
+                        <h1>{{$setting->page_name}}</h1>
                     </div>
                 </div>
             </div>
