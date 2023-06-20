@@ -33,7 +33,7 @@ class InquiryMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Elevate Bali - Inquiry',
+            subject: 'Inquiry - Seven Secrets by Hanging Gardens',
         );
     }
 
