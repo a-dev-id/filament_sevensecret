@@ -189,7 +189,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;"><strong>Package Name :</strong></p>
+                                                                    <p style="margin: 0;">Package Name</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -200,7 +200,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $mailData['package_title'] }}</p>
+                                                                    <p style="margin: 0;">{{ $package_title }}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -225,7 +225,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;"><strong>Full Name :</strong></p>
+                                                                    <p style="margin: 0;">Full Name</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -236,7 +236,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $mailData['full_name'] }}</p>
+                                                                    <p style="margin: 0;">{{ $full_name }}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -261,7 +261,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;"><strong>Phone :</strong></p>
+                                                                    <p style="margin: 0;">Phone</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -272,7 +272,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $mailData['phone'] }}</p>
+                                                                    <p style="margin: 0;">{{ $phone }}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -297,7 +297,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;"><strong>Booking Date :</strong></p>
+                                                                    <p style="margin: 0;">Booking Date</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -308,7 +308,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{$mailData['date']}}</p>
+                                                                    <p style="margin: 0;">{{$date}}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -333,7 +333,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;"><strong>Message :</strong></p>
+                                                                    <p style="margin: 0;">Message</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -344,7 +344,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{$mailData['message']}}</p>
+                                                                    <p style="margin: 0;">{{$message}}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -398,10 +398,8 @@
                                                         <tr>
                                                             <td class="pad">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0; margin-bottom: 16px;"><a href="https://www.hanginggardensofbali.com/" rel="noopener" style="text-decoration: none; color: #1c271f;" target="_blank"><strong>Seven Secrets by Hanging Gardens</strong></a></p>
-                                                                    <p style="margin: 0;">Jl. Raya Pemenang No.KM 10, Malaka, Kec. Pemenang, Kab. Lombok Utara, Nusa Tenggara Barat, Indonesia
-                                                                        <br />Phone: Email: reservations@sevensecretsresorts.com
-                                                                    </p>
+                                                                    <p style="margin: 0; margin-bottom: 16px;"><a href="https://elevatebali.com/" rel="noopener" style="text-decoration: none; color: #1c271f;" target="_blank"><strong>Elevate Bali by Hanging Gardens</strong></a></p>
+                                                                    <p style="margin: 0;">Munduk, Banjar Kabupaten Buleleng - Bali Indonesia<br />Phone: +62 821-4566-6738 Email: reservations@elevatebali.com </p>
                                                                 </div>
                                                             </td>
                                                         </tr>

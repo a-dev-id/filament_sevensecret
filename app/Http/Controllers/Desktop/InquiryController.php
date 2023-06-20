@@ -53,19 +53,42 @@ class InquiryController extends Controller
             'message' => $request->message,
         ]);
 
-        $mailData = [
-            'package_title' => $request->package_title,
-            'full_name' => $request->full_name,
-            'phone' => $request->phone,
-            'date' => $request->date,
-            'message' => $request->message,
-        ];
+        require base_path("vendor/autoload.php");
+        $mail = new PHPMailer(true);
 
-        Mail::to('reservations@sevensecretsresorts.com', 'inquiry.sevensecrets@gmail.com')
-            ->cc([$request->email, 'inquiry.sevensecrets@gmail.com'])
-            ->send(new InquiryMail($mailData));
+        try {
+            $mail->isSMTP();
+            $mail->Host = "p3plzcpnl491163.prod.phx3.secureserver.net";
+            $mail->Port = 25;
+            $mail->SMTPDebug = 0;
+            $mail->SMTPSecure = "none";
+            $mail->SMTPAuth = false;
+            $mail->Username = "";
+            $mail->Password = "";
 
-        return redirect()->route('thank-you.index');
+            $mail->setFrom('inquiry@sevensecretsresorts.com', 'Inquiry - Seven Secrets by Hanging Gardens');
+            $mail->addAddress('reservations@sevensecretsresorts.com', 'inquiry.sevensecrets@gmail.com');
+            $mail->addCC($request->email);
+
+            $mail->isHTML(true);
+
+            $mail->Subject = $request->package_title;
+            $mail->Body    = view('email/inquiry', [
+                'package_title' => $request->package_title,
+                'full_name' => $request->full_name,
+                'phone' => $request->phone,
+                'date' => $request->date,
+                'message' => $request->message,
+            ])->render();
+
+            if (!$mail->send()) {
+                return back()->with('failed', 'Email not sent. (' . $mail->ErrorInfo . ')');
+            } else {
+                return redirect()->route('thank-you.index');
+            }
+        } catch (Exception $e) {
+            return back()->with('error', 'Message could not be sent.');
+        }
     }
 
     /**
