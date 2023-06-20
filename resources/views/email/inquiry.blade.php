@@ -103,14 +103,14 @@
                                                     <table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                                         <tr>
                                                             <td class="pad" style="width:100%;padding-top:20px;padding-bottom:20px;padding-right:0px;padding-left:0px;">
-                                                                <div align="center" class="alignment" style="line-height:10px"><img src="{{asset('images/logo.png')}}" style="display: block; height: auto; border: 0; width: 140px; max-width: 100%;" width="140" /></div>
+                                                                <div align="center" class="alignment" style="line-height:10px"><img src="{{asset('images/logo-sevensecret.png')}}" style="display: block; height: auto; border: 0; width: 140px; max-width: 100%;" width="140" /></div>
                                                             </td>
                                                         </tr>
                                                     </table>
                                                     <table border="0" cellpadding="0" cellspacing="0" class="image_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                                         <tr>
                                                             <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-                                                                <div align="center" class="alignment" style="line-height:10px"><img class="big" src="{{asset('images/inquiry.jpg')}}" style="display: block; height: auto; border: 0; width: 700px; max-width: 100%;" width="700" /></div>
+                                                                <div align="center" class="alignment" style="line-height:10px"><img class="big" src="{{asset('images/inquiry-sevensecrets.jpg')}}" style="display: block; height: auto; border: 0; width: 700px; max-width: 100%;" width="700" /></div>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -189,7 +189,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">Package Name</p>
+                                                                    <p style="margin: 0;"><strong>Package Name :</strong></p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -200,7 +200,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $package_title }}</p>
+                                                                    <p style="margin: 0;">{{ $mailData['package_title'] }}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -225,7 +225,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">Full Name</p>
+                                                                    <p style="margin: 0;"><strong>Full Name :</strong></p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -236,7 +236,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $full_name }}</p>
+                                                                    <p style="margin: 0;">{{ $mailData['full_name'] }}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -261,7 +261,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">Phone</p>
+                                                                    <p style="margin: 0;"><strong>Phone :</strong></p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -272,7 +272,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $phone }}</p>
+                                                                    <p style="margin: 0;">{{ $mailData['phone'] }}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -297,7 +297,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">Booking Date</p>
+                                                                    <p style="margin: 0;"><strong>Booking Date :</strong></p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -308,7 +308,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{$date}}</p>
+                                                                    <p style="margin: 0;">{{$mailData['date']}}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -333,7 +333,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">Message</p>
+                                                                    <p style="margin: 0;"><strong>Message :</strong></p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -344,7 +344,7 @@
                                                         <tr>
                                                             <td class="pad" style="padding-top:5px;padding-bottom:5px;">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{$message}}</p>
+                                                                    <p style="margin: 0;">{{$mailData['message']}}</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -398,8 +398,10 @@
                                                         <tr>
                                                             <td class="pad">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0; margin-bottom: 16px;"><a href="https://elevatebali.com/" rel="noopener" style="text-decoration: none; color: #1c271f;" target="_blank"><strong>Elevate Bali by Hanging Gardens</strong></a></p>
-                                                                    <p style="margin: 0;">Munduk, Banjar Kabupaten Buleleng - Bali Indonesia<br />Phone: +62 821-4566-6738 Email: reservations@elevatebali.com </p>
+                                                                    <p style="margin: 0; margin-bottom: 16px;"><a href="https://www.hanginggardensofbali.com/" rel="noopener" style="text-decoration: none; color: #1c271f;" target="_blank"><strong>Seven Secrets by Hanging Gardens</strong></a></p>
+                                                                    <p style="margin: 0;">Jl. Raya Pemenang No.KM 10, Malaka, Kec. Pemenang, Kab. Lombok Utara, Nusa Tenggara Barat, Indonesia
+                                                                        <br />Phone: Email: reservations@sevensecretsresorts.com
+                                                                    </p>
                                                                 </div>
                                                             </td>
                                                         </tr>
