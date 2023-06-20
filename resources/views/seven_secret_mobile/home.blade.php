@@ -58,7 +58,7 @@
             </div>
         </div>
         <hr> --}}
-        <div class="w-100 pb-2">
+        <div class="w-100 pb-2 mb-5">
             <div class="container-fluid px-1">
                 <div class="row g-1">
                     <div class="col-7">
