@@ -53,6 +53,8 @@ class InquiryController extends Controller
             'message' => $request->message,
         ]);
 
+        $emailcc = 'inquiry.sevensecrets@gmail.com';
+
         require base_path("vendor/autoload.php");
         $mail = new PHPMailer(true);
 
@@ -69,7 +71,7 @@ class InquiryController extends Controller
             $mail->setFrom('inquiry@sevensecretsresorts.com', 'Inquiry - Seven Secrets by Hanging Gardens');
             $mail->addAddress('reservations@sevensecretsresorts.com');
             $mail->addCC($request->email);
-            $mail->addCC('inquiry.sevensecrets@gmail.com');
+            $mail->addCC($$emailcc);
             $mail->addCC('inquiry@sevensecretsresorts.com');
 
             $mail->isHTML(true);
