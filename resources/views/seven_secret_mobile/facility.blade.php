@@ -26,7 +26,7 @@
 </style>
 @endpush
 
-<x-elevate-bali-mobile>
+<x-seven-secret-mobile>
     <div class="wrapper page">
         <div class="header-page fixed-top">
             <div class="container-fluid">
@@ -428,4 +428,4 @@
                 @endforeach
             </div>
         </div>
-</x-elevate-bali-mobile>
+</x-seven-secret-mobile>

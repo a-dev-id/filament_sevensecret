@@ -90,7 +90,7 @@
                                             <hr>
                                             <div class="button-wrapper text-center">
                                                 <h5 class="fw-bold">{{$data->price.' '.$data->per}}</h5>
-                                                <a href="https://book-directonline.com/properties/elevatebalibyhanginggardendirect?" class="btn btn-custom w-100 py-2" target="_blank">Book this Room</a>
+                                                <a href="https://www.e1-booking.com/booking/seven-secrets-by-hanging-gardens_3169.html" class="btn btn-custom w-100 py-2" target="_blank">Book this Room</a>
                                             </div>
                                         </div>
                                     </div>

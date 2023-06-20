@@ -18,7 +18,7 @@
 
 @section('gallery_active', 'active')
 
-<x-elevate-bali-mobile>
+<x-seven-secret-mobile>
     <div class="wrapper page">
         <div class="header-page fixed-top">
             <div class="container-fluid">
@@ -47,4 +47,4 @@
             </div>
         </div>
     </div>
-</x-elevate-bali-mobile>
+</x-seven-secret-mobile>
