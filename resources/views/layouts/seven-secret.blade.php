@@ -165,8 +165,9 @@
                         <h3 class="d-flex justify-content-between">Follow Us <i class="fa fa-share-alt"></i></h3>
                     </div>
                     <nav class="nav flex-row">
-                        <a href="https://www.instagram.com/elevate.bali" class="nav-link link-share link-share-instagram rounded-circle m-0 border-1 me-2" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/elevateresortbali" class="nav-link link-share link-share-facebook rounded-circle m-0 border-1 me-2" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sevensecretsresort/" class="nav-link link-share link-share-instagram rounded-circle m-0 border-1 me-2" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/7SecretsResort/" class="nav-link link-share link-share-facebook rounded-circle m-0 border-1 me-2" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/@7secretsresortwellnessretr105" class="nav-link social-media-share social-media-share-youtube me-2 text-dark"><i class="fab fa-youtube"></i></a>
                     </nav>
                     {{-- <div class="row">
                         <div class="col-12 col-md-6">
