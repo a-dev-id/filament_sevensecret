@@ -7,7 +7,7 @@ use App\Mail\InquiryMail;
 use App\Models\Inquiry;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use PHPMailer\PHPMailer\PHPMailer;  
+use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 class InquiryController extends Controller
@@ -53,43 +53,19 @@ class InquiryController extends Controller
             'message' => $request->message,
         ]);
 
-        require base_path("vendor/autoload.php");
-        $mail = new PHPMailer(true);
+        $mailData = [
+            'package_title' => $request->package_title,
+            'full_name' => $request->full_name,
+            'phone' => $request->phone,
+            'date' => $request->date,
+            'message' => $request->message,
+        ];
 
-        try {
-            $mail->isSMTP();
-            $mail->Host = "p3plzcpnl489520.prod.phx3.secureserver.net";
-            $mail->Port = 25;
-            $mail->SMTPDebug = 0;
-            $mail->SMTPSecure = "none";
-            $mail->SMTPAuth = false;
-            $mail->Username = "";
-            $mail->Password = "";
-            
-            $mail->setFrom('inquiry@elevatebali.com', 'Inquiry Elevate Bali');
-            $mail->addAddress('reservations@elevatebali.com');
-            $mail->addCC($request->email);
+        Mail::to('reservations@sevensecretsresorts.com')
+            ->cc([$request->email, 'inquiry.sevensecrets@gmail.com'])
+            ->send(new InquiryMail($mailData));
 
-            $mail->isHTML(true);
-
-            $mail->Subject = $request->package_title;
-            $mail->Body    = view('email/inquiry', [
-                'package_title' => $request->package_title,
-                'full_name' => $request->full_name,
-                'phone' => $request->phone,
-                'date' => $request->date,
-                'message' => $request->message,
-            ])->render();
-
-            if (!$mail->send()) {
-                return back()->with('failed', 'Email not sent. ('.$mail->ErrorInfo.')');
-            } else {
-                return redirect()->route('thank-you.index');
-            }
-        } catch (Exception $e) {
-            return back()->with('error', 'Message could not be sent.');
-        }
-
+        return redirect()->route('thank-you.index');
     }
 
     /**
