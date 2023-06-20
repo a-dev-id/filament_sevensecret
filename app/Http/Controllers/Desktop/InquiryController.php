@@ -61,7 +61,7 @@ class InquiryController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('reservations@sevensecretsresorts.com')
+        Mail::to('reservations@sevensecretsresorts.com', 'inquiry.sevensecrets@gmail.com')
             ->cc([$request->email, 'inquiry.sevensecrets@gmail.com'])
             ->send(new InquiryMail($mailData));
 
