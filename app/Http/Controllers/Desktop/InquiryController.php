@@ -70,9 +70,9 @@ class InquiryController extends Controller
 
             $mail->setFrom('inquiry@sevensecretsresorts.com', 'Inquiry - Seven Secrets by Hanging Gardens');
             $mail->addAddress('reservations@sevensecretsresorts.com');
-            $mail->addCC($request->email);
-            $mail->addCC($emailcc);
             $mail->addCC('inquiry@sevensecretsresorts.com');
+            $mail->addCC($emailcc);
+            $mail->addCC($request->email);
 
             $mail->isHTML(true);
 
