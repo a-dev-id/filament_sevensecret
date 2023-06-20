@@ -103,14 +103,14 @@
                                                     <table border="0" cellpadding="0" cellspacing="0" class="image_block block-1" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                                         <tr>
                                                             <td class="pad" style="width:100%;padding-top:20px;padding-bottom:20px;padding-right:0px;padding-left:0px;">
-                                                                <div align="center" class="alignment" style="line-height:10px"><img src="{{asset('images/logo-sevensecret.webp')}}" style="display: block; height: auto; border: 0; width: 140px; max-width: 100%;" width="140" /></div>
+                                                                <div align="center" class="alignment" style="line-height:10px"><img src="{{asset('images/logo-sevensecret.png')}}" style="display: block; height: auto; border: 0; width: 140px; max-width: 100%;" width="140" /></div>
                                                             </td>
                                                         </tr>
                                                     </table>
                                                     <table border="0" cellpadding="0" cellspacing="0" class="image_block block-2" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                                         <tr>
                                                             <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-                                                                <div align="center" class="alignment" style="line-height:10px"><img class="big" src="{{asset('images/inquiry-sevensecrets.jpg')}}" style="display: block; height: auto; border: 0; width: 700px; max-width: 100%;" width="700" /></div>
+                                                                <div align="center" class="alignment" style="line-height:10px"><img class="big" src="{{asset('images/inquiry-sevensecret.webp')}}" style="display: block; height: auto; border: 0; width: 700px; max-width: 100%;" width="700" /></div>
                                                             </td>
                                                         </tr>
                                                     </table>
