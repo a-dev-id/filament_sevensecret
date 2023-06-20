@@ -3,7 +3,7 @@
 <meta name="description" content="{{ $setting->meta_description }}">
 <meta name="keywords" content="{{ implode(',', $setting->meta_keyword) }}">
 <title>{{ $setting->meta_title }}</title>
-<meta property="og:url" content="{{ route('mvilla') }}">
+<meta property="og:url" content="{{ route('mspa') }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
@@ -13,7 +13,7 @@
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
 <meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
-<link rel="canonical" href="{{ route('mvilla') }}" />
+<link rel="canonical" href="{{ route('mspa') }}" />
 @endsection
 
 <x-seven-secret-mobile>
@@ -40,7 +40,7 @@
                             {!! $setting->description !!}
                         </p>
                         <div class="button-wrapper text-center">
-                            <a href="mailto:reservations@hanginggardensofbali.com" class="btn btn-custom w-100 py-2" target="_blank">Inquire Now</a>
+                            <a href="mailto:reservations@sevensecretsresort.com" class="btn btn-custom w-100 py-2" target="_blank">Inquire Now</a>
                         </div>
                     </div>
                 </div>

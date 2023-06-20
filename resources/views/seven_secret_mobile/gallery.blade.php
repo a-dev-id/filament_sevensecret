@@ -3,7 +3,7 @@
 <meta name="description" content="{{ $setting->meta_description }}">
 <meta name="keywords" content="{{ implode(',', $setting->meta_keyword) }}">
 <title>{{ $setting->meta_title }}</title>
-<meta property="og:url" content="{{ route('mgallery',[$setting->slug]) }}">
+<meta property="og:url" content="{{ route('mgallery') }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ $setting->meta_title }}">
 <meta property="og:description" content="{{ $setting->meta_description }}">
@@ -13,7 +13,7 @@
 <meta name="twitter:description" content="{{ $setting->meta_description }}">
 <meta name="twitter:image" content="{{ asset($setting->banner_image) }}">
 
-<link rel="canonical" href="{{ route('mgallery',[$setting->slug]) }}" />
+<link rel="canonical" href="{{ route('mgallery') }}" />
 @endsection
 
 @section('gallery_active', 'active')

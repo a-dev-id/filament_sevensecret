@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid activities py-2">
+        <div class="container-fluid activities py-2 mb-5">
             <div class="row">
                 @foreach ($dining_list as $data)
                 <div class="col-12">
