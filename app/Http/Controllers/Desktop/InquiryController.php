@@ -70,6 +70,7 @@ class InquiryController extends Controller
             $mail->addAddress('reservations@sevensecretsresorts.com');
             $mail->addCC($request->email);
             $mail->addCC('inquiry.sevensecrets@gmail.com');
+            $mail->addCC('inquiry@sevensecretsresorts.com');
 
             $mail->isHTML(true);
 
