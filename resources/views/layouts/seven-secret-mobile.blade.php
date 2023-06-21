@@ -19,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
 
-    <link rel="icon" type="image/png" href="{{ asset('images/nandini-icon.png') }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/elevate_mobile.css')}}">
+    <link rel="icon" type="image/png" href="{{ asset('images/logo-sevensecret.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/seven_secrets_mobile.css')}}">
 
     @stack('css')
 </head>
