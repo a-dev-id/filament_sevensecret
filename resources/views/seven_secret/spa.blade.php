@@ -71,6 +71,11 @@
                         </button>
                     </div>
                 </div>
+                <div class="col-12 col-md-8 ps-5">
+                    {{-- <h5 class="fw-bold mb-3">{{$setting->excerpt}}</h5> --}}
+                    <div class="lh-lg">{!! $setting->description !!}</div>
+
+                </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="inquiry-spa" tabindex="-1" aria-labelledby="inquiry-spaLabel" aria-hidden="true">
@@ -406,11 +411,7 @@
                     </form>
 
 
-                    <div class="col-12 col-md-8 ps-5">
-                        {{-- <h5 class="fw-bold mb-3">{{$setting->excerpt}}</h5> --}}
-                        <div class="lh-lg">{!! $setting->description !!}</div>
 
-                    </div>
                 </div>
             </div>
     </section>
