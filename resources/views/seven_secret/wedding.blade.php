@@ -49,17 +49,17 @@
                     {!! $setting->description !!}
                 </div>
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-primary text-uppercase py-2 fw-bold rounded-0 small" data-bs-toggle="modal" data-bs-target="#{{'modalinquiry_wedding'}}">
+                    <button type="button" class="btn btn-primary text-uppercase py-2 fw-bold rounded-0 small" data-bs-toggle="modal" data-bs-target="#modal-wedding">
                         Inquiry Now
                     </button>
                 </div>
                 <!-- Inquiry Modal -->
-                <div class="modal fade" id="{{'modalinquiry_wedding'}}" tabindex="-1" aria-labelledby="{{'modalinquiry_wedding'}}Label" aria-hidden="true">
+                <div class="modal fade" id="modal-wedding" tabindex="-1" aria-labelledby="modal-weddingLabel" aria-hidden="true">
                     <form class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" method="post" action="{{route('inquiry.store')}}">
                         @csrf
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2 class="modal-title text-uppercase fw-bold" id="{{'modalinquiry_wedding'}}Label">Inquiry Form</h2>
+                                <h2 class="modal-title text-uppercase fw-bold" id="modal-weddingLabel">Inquiry Form</h2>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -362,10 +362,10 @@
                                             @push('js')
                                             <script>
                                                 $('#reserveddate_enquiry_wedding').datepicker({
-                                                                                                                                                                format: 'dd-mm-yyyy',
-                                                                                                                                                                startDate: "08-02-2023",
-                                                                                                                                                                autoclose: true
-                                                                                                                                                                });
+                                                    format: 'dd-mm-yyyy',
+                                                    startDate: "{{date("d-m-Y")}}",
+                                                    autoclose: true
+                                                });
                                             </script>
                                             @endpush
                                             <div class="col-12">
