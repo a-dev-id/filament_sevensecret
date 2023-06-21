@@ -66,17 +66,13 @@
                             <div class="col-12 h-90px">
                                 <div class="tiles">
                                     <img src="{{asset($villa->banner_image)}}" alt="{{config('app.name')}} - {{$villa->page_name}}">
-                                    <a href="{{route('mvilla')}}">
-                                        <h2>{{$villa->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mvilla')}}">{{$villa->page_name}}</a>
                                 </div>
                             </div>
                             <div class="col-12 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($experience->banner_image)}}" alt="{{config('app.name')}} - {{$experience->page_name}}">
-                                    <a href="{{route('mexperience')}}">
-                                        <h2>{{$experience->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mexperience')}}">{{$experience->page_name}}</a>
                                 </div>
                             </div>
                         </div>
@@ -86,9 +82,7 @@
                             <div class="col-12 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($offer->banner_image)}}" alt="{{config('app.name')}} - {{$offer->page_name}}">
-                                    <a href="{{route('moffer')}}">
-                                        <h2>{{$offer->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('moffer')}}">{{$offer->page_name}}</a>
                                 </div>
                             </div>
                             <div class="col-12 h-90px">
@@ -104,17 +98,13 @@
                             <div class="col-6 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($facilities->banner_image)}}" alt="{{config('app.name')}} - {{$facilities->page_name}}">
-                                    <a href="{{route('mfacility')}}">
-                                        <h2>{{$facilities->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mfacility')}}">{{$facilities->page_name}}</a>
                                 </div>
                             </div>
                             <div class="col-6 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($spa->banner_image)}}" alt="{{config('app.name')}} - {{$spa->page_name}}">
-                                    <a href="{{route('mspa')}}">
-                                        <h2>{{$spa->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mspa')}}">{{$spa->page_name}}</a>
                                 </div>
                             </div>
                         </div>
@@ -124,9 +114,7 @@
                             <div class="col-12 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($dining->banner_image)}}" alt="{{config('app.name')}} - {{$dining->page_name}}">
-                                    <a href="{{route('mdining')}}">
-                                        <h2>{{$dining->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mdining')}}">{{$dining->page_name}}</a>
                                 </div>
                             </div>
                         </div>
@@ -136,9 +124,7 @@
                             <div class="col-12 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($wedding->banner_image)}}" alt="{{config('app.name')}} - {{$wedding->page_name}}">
-                                    <a href="{{route('mwedding')}}">
-                                        <h2>{{$wedding->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mwedding')}}">{{$wedding->page_name}}</a>
                                 </div>
                             </div>
                         </div>
@@ -148,9 +134,7 @@
                             <div class="col-12 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($honeymoon->banner_image)}}" alt="{{config('app.name')}} - {{$honeymoon->page_name}}">
-                                    <a href="{{route('mhoneymoon')}}">
-                                        <h2>{{$honeymoon->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mhoneymoon')}}">{{$honeymoon->page_name}}</a>
                                 </div>
                             </div>
                         </div>
@@ -160,9 +144,7 @@
                             <div class="col-12 h-150px">
                                 <div class="tiles">
                                     <img src="{{asset($blog->banner_image)}}" alt="{{config('app.name')}} - {{$blog->page_name}}">
-                                    <a href="{{route('mblog')}}">
-                                        <h2>{{$blog->page_name}}</h2>
-                                    </a>
+                                    <a href="{{route('mblog')}}">{{$blog->page_name}}</a>
                                 </div>
                             </div>
                         </div>
