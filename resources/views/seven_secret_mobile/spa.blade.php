@@ -62,10 +62,10 @@
                         <div class="d-flex justify-content-center">
                             <div class="col-12">
                                 <div class="row g-3">
-                                    <input type="hidden" name="package_title" value="{{$data->title}}">
-                                    <input type="hidden" name="package_excerpt" value="{{$data->excerpt}}">
-                                    <input type="hidden" name="package_price" value="{{$data->price}}">
-                                    <input type="hidden" name="package_per" value="{{$data->per}}">
+                                    <input type="hidden" name="package_title" value="{{$setting->title}}">
+                                    <input type="hidden" name="package_excerpt" value="{{$setting->excerpt}}">
+                                    <input type="hidden" name="package_price" value="{{$setting->price}}">
+                                    <input type="hidden" name="package_per" value="{{$setting->per}}">
                                     <div class="col-12 col-md-6 mb-2">
                                         <label for="fullname_enquiry" class="form-label">Full Name<span class="text-danger">*</span></label>
                                         <div class="input-group rounded-0">
