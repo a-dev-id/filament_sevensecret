@@ -399,7 +399,7 @@
                                                             <td class="pad">
                                                                 <div style="color:#101112;font-size:14px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-weight:400;line-height:120%;text-align:left;direction:ltr;letter-spacing:0px;mso-line-height-alt:16.8px;">
                                                                     <p style="margin: 0; margin-bottom: 16px;"><a href="https://sevensecretsresorts.com/" rel="noopener" style="text-decoration: none; color: #1c271f;" target="_blank"><strong>Seven Secrets by Hanging Gardens</strong></a></p>
-                                                                    <p style="margin: 0;">Jl. Raya Pemenang No.KM 10, Malaka, Kec. Pemenang, Kab. Lombok Utara, Nusa Tenggara Barat, Indonesia<br />Phone: - / Email: reservations@elevatebali.com</p>
+                                                                    <p style="margin: 0;">Jl. Raya Pemenang No.KM 10, Malaka, Kec. Pemenang, Kab. Lombok Utara, Nusa Tenggara Barat, Indonesia<br />Phone: - / Email: reservations@sevensecretsresorts.com</p>
                                                                 </div>
                                                             </td>
                                                         </tr>
