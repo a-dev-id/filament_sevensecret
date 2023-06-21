@@ -377,7 +377,7 @@
                     </div>
                     <div class="modal-footer button-wrapper">
                         <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-custom">{{$data->button_text}}</button>
+                        <button type="submit" class="btn btn-custom">Inquiry Now</button>
                     </div>
                 </div>
             </form>
