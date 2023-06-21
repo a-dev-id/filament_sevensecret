@@ -70,7 +70,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-7"></div>
                                         <div class="col-12 col-md-5 d-flex justify-content-center align-items-center">
-                                            <a href="https://www.e1-booking.com/booking/booking-page.php?id=3169&checkin={{date('Y-m-d')}}&checkout={{date('Y-m-d',strtotime('+'.$data->min_night.' days'))}}&promo={{$data->promo_code}}" target="blank" class="btn btn-primary text-uppercase w-100 py-2 fw-bold rounded-0 small">BOOK NOW</a>
+                                            <a href="https://www.e1-booking.com/booking/booking-page.php?id=3169&checkin={{date('d-m-Y')}}&checkout={{date('d-m-Y',strtotime('+'.$data->min_night.' days'))}}&promo={{$data->promo_code}}" target="blank" class="btn btn-primary text-uppercase w-100 py-2 fw-bold rounded-0 small">BOOK NOW</a>
                                         </div>
                                     </div>
                                 </div>
