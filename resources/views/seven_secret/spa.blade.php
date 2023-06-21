@@ -66,7 +66,7 @@
                         </p>
                     </div>
                     <div class="mt-1">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#inquiry-spa">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#inquiry-spa" class="btn btn-sm btn-primary text-uppercase py-2 px-3 rounded-0">
                             Inquiry Now
                         </button>
                     </div>
