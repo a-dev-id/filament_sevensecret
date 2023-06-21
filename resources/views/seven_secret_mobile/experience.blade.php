@@ -64,7 +64,7 @@
                             </div>
                             <div class="button-wrapper text-end">
                                 <button type="button" class="btn btn-outline-custom" data-bs-toggle="modal" data-bs-target="#{{$data->slug}}">View Details</button>
-                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#{{'modalinquiry'.$data->id}}">
+                                <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#modalnya-spa-ini">
                                     {{ $data->button_text }}
                                 </button>
                             </div>
@@ -82,7 +82,7 @@
                                     </div>
                                     <div class="modal-footer button-wrapper">
                                         <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#{{'modalinquiry'.$data->id}}">
+                                        <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#modalnya-spa-ini">
                                             {{ $data->button_text }}
                                         </button>
                                     </div>
@@ -91,22 +91,22 @@
                         </div>
 
                         <!-- Inquiry Modal -->
-                        <div class="modal fade" id="{{'modalinquiry'.$data->id}}" tabindex="-1" aria-labelledby="{{'modalinquiry'.$data->id}}Label" aria-hidden="true">
+                        <div class="modal fade" id="modalnya-spa-ini" tabindex="-1" aria-labelledby="modalnya-spa-iniLabel" aria-hidden="true">
                             <form class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm" method="post" action="{{route('inquiry.store')}}">
                                 @csrf
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h2 class="modal-title text-uppercase" id="{{'modalinquiry'.$data->id}}Label">Inquiry Form</h2>
+                                        <h2 class="modal-title text-uppercase" id="modalnya-spa-iniLabel">Inquiry Form</h2>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="d-flex justify-content-center">
                                             <div class="col-12">
                                                 <div class="row g-3">
-                                                    <input type="hidden" name="package_title" value="{{$data->title}}">
-                                                    <input type="hidden" name="package_excerpt" value="{{$data->excerpt}}">
-                                                    <input type="hidden" name="package_price" value="{{$data->price}}">
-                                                    <input type="hidden" name="package_per" value="{{$data->per}}">
+                                                    <input type="hidden" name="package_title" value="{{$setting->title}}">
+                                                    <input type="hidden" name="package_excerpt" value="{{$setting->excerpt}}">
+                                                    <input type="hidden" name="package_price" value="{{$setting->price}}">
+                                                    <input type="hidden" name="package_per" value="{{$setting->per}}">
                                                     <div class="col-12 col-md-6 mb-2">
                                                         <label for="fullname_enquiry" class="form-label">Full Name<span class="text-danger">*</span></label>
                                                         <div class="input-group rounded-0">
