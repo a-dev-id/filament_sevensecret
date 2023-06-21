@@ -399,9 +399,10 @@
                                                     @push('js')
                                                     <script>
                                                         $('#reserveddate_enquiry{{$data->id}}').datepicker({
-                                                                                    format: 'dd-mm-yyyy',
-                                                                                    autoclose: true
-                                                                                });
+                                                            format: 'dd-mm-yyyy',
+                                                            startDate: "{{date("d-m-Y")}}",
+                                                            autoclose: true
+                                                        });
                                                     </script>
                                                     @endpush
                                                     <div class="col-12">
