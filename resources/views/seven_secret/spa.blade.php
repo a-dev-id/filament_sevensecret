@@ -85,10 +85,10 @@
                                 <div class="d-flex justify-content-center">
                                     <div class="col-12">
                                         <div class="row g-3">
-                                            <input type="hidden" name="package_title" value="{{$data->title}}">
-                                            <input type="hidden" name="package_excerpt" value="{{$data->excerpt}}">
-                                            <input type="hidden" name="package_price" value="{{$data->price}}">
-                                            <input type="hidden" name="package_per" value="{{$data->per}}">
+                                            <input type="hidden" name="package_title" value="{{$setting->title}}">
+                                            <input type="hidden" name="package_excerpt" value="{{$setting->excerpt}}">
+                                            <input type="hidden" name="package_price" value="{{$setting->price}}">
+                                            <input type="hidden" name="package_per" value="{{$setting->per}}">
                                             <div class="col-12 col-md-6 mb-2">
                                                 <label for="fullname_enquiry" class="form-label">Full Name<span class="text-danger">*</span></label>
                                                 <div class="input-group rounded-0">
@@ -372,15 +372,15 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 mb-2">
-                                                <label for="reserveddate_enquiry{{$data->id}}" class="form-label">Reserved Date<span class="text-danger">*</span></label>
+                                                <label for="reserveddate_enquiry_spa" class="form-label">Reserved Date<span class="text-danger">*</span></label>
                                                 <div class="input-group rounded-0">
                                                     <span class="input-group-text rounded-0 px-3"><i class="fa fa-calendar" style="width: 16px;"></i></span>
-                                                    <input type="text" class="datepicker form-control rounded-0" name="date" id="reserveddate_enquiry{{$data->id}}" required="true" readonly="true">
+                                                    <input type="text" class="datepicker form-control rounded-0" name="date" id="reserveddate_enquiry_spa" required="true" readonly="true">
                                                 </div>
                                             </div>
                                             @push('js')
                                             <script>
-                                                $('#reserveddate_enquiry{{$data->id}}').datepicker({
+                                                $('#reserveddate_enquiry_spa').datepicker({
                                                         format: 'dd-mm-yyyy',
                                                         startDate: "{{date("d-m-Y")}}",
                                                         autoclose: true
