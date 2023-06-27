@@ -86,3 +86,7 @@ Route::get('/link', function () {
     $shortcut = '/home/wcw3g0802d5s/public_html/storage';
     symlink($target, $shortcut);
 });
+
+Route::fallback(function () {
+    return redirect()->route('index');
+});
