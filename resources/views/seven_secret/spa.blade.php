@@ -62,7 +62,7 @@
                         <h4 class="text-uppercase mb-0" style="font-size: 12px;">Contact</h4>
                         <p class="fs-6 fw-bold mb-0">
                             <a href="mailto:spa@sevensecretsresorts.com" class="link-dark text-decoration-none d-block mb-0">spa@sevensecretsresorts.com</a>
-                            <a href="tel:+62 821 4566 6738" class="link-dark text-decoration-none d-block mb-0">+62 821 4566 6738</a>
+                            {{-- <a href="tel:+62 821 4566 6738" class="link-dark text-decoration-none d-block mb-0">+62 821 4566 6738</a> --}}
                         </p>
                     </div>
                     {{-- <div class="mt-1">
