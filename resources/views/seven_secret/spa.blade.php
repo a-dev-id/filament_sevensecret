@@ -421,7 +421,7 @@
                     <div class="row">
                         @if($loop->iteration % 2 == 0) <div class="col-12 col-md-5 d-flex flex-column justify-content-between order-2"> @else <div class="col-12 col-md-5 d-flex flex-column justify-content-between order-1"> @endif
                                 <div class="pe-3">
-                                    <h2 class="text-uppercase mb-3">{{$data->title}}</h2>
+                                    <h2 class="text-uppercase mb-3 text-uppercase">{{$data->title}}</h2>
                                     <p class="fw-bold mb-4">{{$data->subtitle}}</p>
                                     {!! $data->description !!}
                                 </div>
