@@ -115,7 +115,7 @@ class SpaResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')->sortable()->searchable(),
-                ImageColumn::make('banner_image')->square(),
+                ImageColumn::make('cover_image')->label('Image')->square(),
                 Tables\Columns\TextColumn::make('is_active')->label('Published'),
                 Tables\Columns\BadgeColumn::make('is_active')->label('Status')
                     ->enum([

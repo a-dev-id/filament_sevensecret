@@ -65,11 +65,11 @@
                             <a href="tel:+62 821 4566 6738" class="link-dark text-decoration-none d-block mb-0">+62 821 4566 6738</a>
                         </p>
                     </div>
-                    <div class="mt-1">
+                    {{-- <div class="mt-1">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#inquiry-spa" class="btn btn-sm btn-primary text-uppercase py-2 px-3 rounded-0">
                             Inquiry Now
                         </button>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-12 col-md-8 ps-5">
                     {{-- <h5 class="fw-bold mb-3">{{$setting->excerpt}}</h5> --}}
@@ -78,7 +78,7 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="inquiry-spa" tabindex="-1" aria-labelledby="inquiry-spaLabel" aria-hidden="true">
+                {{-- <div class="modal fade" id="inquiry-spa" tabindex="-1" aria-labelledby="inquiry-spaLabel" aria-hidden="true">
                     <form class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" method="post" action="{{route('inquiry.store')}}">
                         @csrf
                         <div class="modal-content">
@@ -409,7 +409,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> --}}
             </div>
     </section>
 
