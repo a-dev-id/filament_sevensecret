@@ -42,7 +42,7 @@
         </div>
         <div class="container-fluid activities py-2 mb-5">
             <div class="row">
-                @foreach ($dining_list as $data)
+                @foreach ($spa_list as $data)
                 <div class="col-12">
                     <div class="row gx-1 py-3 @if ($loop->last) @else border-bottom @endif">
                         <div class="col-5">
